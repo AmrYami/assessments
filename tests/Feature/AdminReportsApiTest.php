@@ -1,10 +1,10 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Fakeeh\Assessments\Domain\Models\Exam;
-use Fakeeh\Assessments\Tests\Concerns\CreatesReportData;
-use Fakeeh\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Tests\Concerns\CreatesReportData;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\View;
 
 class AdminReportsApiTest extends TestCase

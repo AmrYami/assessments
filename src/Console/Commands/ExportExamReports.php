@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Fakeeh\Assessments\Domain\Models\Exam;
-use Fakeeh\Assessments\Services\ExamReportService;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Services\ExamReportService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

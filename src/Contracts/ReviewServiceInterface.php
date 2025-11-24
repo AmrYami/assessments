@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Contracts;
+namespace Amryami\Assessments\Contracts;
 
-use Fakeeh\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Attempt;
 
 interface ReviewServiceInterface
 {

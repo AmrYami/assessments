@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Fakeeh\Assessments\Domain\Models\Attempt;
-use Fakeeh\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Exam;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

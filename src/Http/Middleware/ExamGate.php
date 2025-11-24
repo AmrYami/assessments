@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Middleware;
+namespace Amryami\Assessments\Http\Middleware;
 
-use Fakeeh\Assessments\Domain\Models\{ExamRequirement, Exam};
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Domain\Models\{ExamRequirement, Exam};
+use Amryami\Assessments\Support\ModelResolver;
 use Closure;
 use Illuminate\Http\Request;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Fakeeh\Assessments\Domain\Models\{Question, Exam, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
+use Amryami\Assessments\Domain\Models\{Question, Exam, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
 use Illuminate\Support\Facades\DB;
 
 class SchemaHashService

@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Fakeeh\Assessments\Domain\Models\Question;
-use Fakeeh\Assessments\Support\FormRequest;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Support\FormRequest;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;

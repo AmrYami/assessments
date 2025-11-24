@@ -1,11 +1,11 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\AnswerSet;
-use Fakeeh\Assessments\Domain\Models\AnswerSetItem;
-use Fakeeh\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\AnswerSet;
+use Amryami\Assessments\Domain\Models\AnswerSetItem;
+use Amryami\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

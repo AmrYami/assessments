@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Fakeeh\Assessments\Domain\Models\{Exam, Question};
+use Amryami\Assessments\Domain\Models\{Exam, Question};
 use Illuminate\Support\Collection;
 
 class ExamAssemblyService

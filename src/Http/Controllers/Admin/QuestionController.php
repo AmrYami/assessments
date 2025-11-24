@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\{
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{
     AnswerKey,
     AnswerSet,
     AnswerSetItem,
@@ -13,8 +13,8 @@ use Fakeeh\Assessments\Domain\Models\{
     QuestionResponsePart,
     Topic
 };
-use Fakeeh\Assessments\Http\Requests\Admin\{StoreQuestionRequest, UpdateQuestionRequest};
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Http\Requests\Admin\{StoreQuestionRequest, UpdateQuestionRequest};
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -460,7 +460,7 @@ class QuestionController extends Controller
     {
         try {
             $question->load(['options', 'answerLinks', 'responseParts']);
-            $hash = app(\Fakeeh\Assessments\Services\SchemaHashService::class)->computeForQuestion($question);
+            $hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForQuestion($question);
             $question->schema_hash = $hash;
             $question->save();
         } catch (\Throwable $e) {

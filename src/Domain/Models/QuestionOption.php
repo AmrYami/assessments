@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Domain\Models;
+namespace Amryami\Assessments\Domain\Models;
 
-use Fakeeh\Assessments\Support\BaseModel;
+use Amryami\Assessments\Support\BaseModel;
 
 class QuestionOption extends BaseModel
 {

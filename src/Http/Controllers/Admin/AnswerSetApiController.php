@@ -1,14 +1,14 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\AnswerSet;
-use Fakeeh\Assessments\Domain\Models\AnswerSetItem;
-use Fakeeh\Assessments\Domain\Models\Question;
-use Fakeeh\Assessments\Domain\Models\QuestionAnswer;
-use Fakeeh\Assessments\Http\Requests\Admin\Api\{LinkAnswerSetItemsRequest, StoreAnswerSetRequest, UnlinkAnswerSetItemsRequest};
-use Fakeeh\Assessments\Http\Resources\AnswerSetResource;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\AnswerSet;
+use Amryami\Assessments\Domain\Models\AnswerSetItem;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Domain\Models\QuestionAnswer;
+use Amryami\Assessments\Http\Requests\Admin\Api\{LinkAnswerSetItemsRequest, StoreAnswerSetRequest, UnlinkAnswerSetItemsRequest};
+use Amryami\Assessments\Http\Resources\AnswerSetResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
@@ -113,7 +113,7 @@ class AnswerSetApiController extends Controller
     protected function refreshQuestionSchema(Question $question): void
     {
         try {
-            $hash = app(\Fakeeh\Assessments\Services\SchemaHashService::class)->computeForQuestion($question->fresh());
+            $hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForQuestion($question->fresh());
             $question->schema_hash = $hash;
             $question->save();
         } catch (\Throwable $e) {

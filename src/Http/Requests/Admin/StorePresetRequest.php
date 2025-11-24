@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Fakeeh\Assessments\Support\FormRequest;
+use Amryami\Assessments\Support\FormRequest;
 use Illuminate\Validation\Rule;
 
 class StorePresetRequest extends FormRequest

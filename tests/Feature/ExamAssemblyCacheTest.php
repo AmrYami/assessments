@@ -1,12 +1,12 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Fakeeh\Assessments\Domain\Models\Exam;
-use Fakeeh\Assessments\Domain\Models\Question;
-use Fakeeh\Assessments\Services\ExamAssemblyService;
-use Fakeeh\Assessments\Services\QuestionPoolCache;
-use Fakeeh\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Services\QuestionPoolCache;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 
 class ExamAssemblyCacheTest extends TestCase

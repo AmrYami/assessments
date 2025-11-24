@@ -1,13 +1,13 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Resources;
+namespace Amryami\Assessments\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class AnswerSetItemResource extends JsonResource
 {
     /**
-     * @param  \Fakeeh\Assessments\Domain\Models\AnswerSetItem  $resource
+     * @param  \Amryami\Assessments\Domain\Models\AnswerSetItem  $resource
      */
     public function __construct($resource)
     {

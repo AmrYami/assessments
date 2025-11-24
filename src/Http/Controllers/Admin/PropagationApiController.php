@@ -1,13 +1,13 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\{Question, Exam, Topic};
-use Fakeeh\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
-use Fakeeh\Assessments\Services\PropagationService;
-use Fakeeh\Assessments\Services\ExamAssemblyService;
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{Question, Exam, Topic};
+use Amryami\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
+use Amryami\Assessments\Services\PropagationService;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 
 class PropagationApiController extends Controller

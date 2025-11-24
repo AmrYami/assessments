@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Fakeeh\Assessments\Domain\Models\{Question, Exam, QuestionPlacement, ExamPlacement, Topic, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Domain\Models\{Question, Exam, QuestionPlacement, ExamPlacement, Topic, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -46,7 +46,7 @@ class PropagationService
             $maxV = Question::query()->where('origin_id', $originId)->max('version');
             $new->version = ((int)$maxV ?: 1) + 1;
             $new->save();
-            try { $new->schema_hash = app(\Fakeeh\Assessments\Services\SchemaHashService::class)->computeForQuestion($new); $new->save(); } catch (\Throwable $e) {}
+            try { $new->schema_hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForQuestion($new); $new->save(); } catch (\Throwable $e) {}
 
             // 2) Clone options maintaining order
             $oldOptions = QuestionOption::where('question_id', $question->id)->orderBy('position')->get();
@@ -167,7 +167,7 @@ class PropagationService
             $maxV = Exam::query()->where('origin_id', $originId)->max('version');
             $new->version = ((int)$maxV ?: 1) + 1;
             $new->save();
-            try { $new->schema_hash = app(\Fakeeh\Assessments\Services\SchemaHashService::class)->computeForExam($new); $new->save(); } catch (\Throwable $e) {}
+            try { $new->schema_hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForExam($new); $new->save(); } catch (\Throwable $e) {}
             // 2) Clone topics
             $topicIds = DB::table('assessment_exam_topics')->where('exam_id',$exam->id)->pluck('topic_id')->all();
             foreach ($topicIds as $tid) {

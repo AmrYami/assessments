@@ -1,6 +1,6 @@
 <?php
 
-namespace Fakeeh\Assessments\Database\Seeders;
+namespace Amryami\Assessments\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Carbon;

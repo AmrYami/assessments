@@ -1,10 +1,10 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\Exam;
-use Fakeeh\Assessments\Services\ExamReportService;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Services\ExamReportService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

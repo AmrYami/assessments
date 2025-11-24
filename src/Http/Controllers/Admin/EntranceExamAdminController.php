@@ -1,11 +1,11 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\ExamRequirement;
-use Fakeeh\Assessments\Domain\Models\Exam;
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\ExamRequirement;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 

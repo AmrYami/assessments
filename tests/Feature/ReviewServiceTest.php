@@ -1,11 +1,11 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Fakeeh\Assessments\Contracts\ReviewServiceInterface;
-use Fakeeh\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
-use Fakeeh\Assessments\Tests\Fixtures\User;
-use Fakeeh\Assessments\Tests\TestCase;
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
+use Amryami\Assessments\Tests\Fixtures\User;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class ReviewServiceTest extends TestCase

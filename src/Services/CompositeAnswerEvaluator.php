@@ -1,6 +1,6 @@
 <?php
 
-namespace Fakeeh\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
 class CompositeAnswerEvaluator
 {

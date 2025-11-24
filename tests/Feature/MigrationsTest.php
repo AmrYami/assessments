@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Fakeeh\Assessments\Domain\Models\Topic;
-use Fakeeh\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Topic;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 

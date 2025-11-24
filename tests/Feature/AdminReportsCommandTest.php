@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Fakeeh\Assessments\Tests\Concerns\CreatesReportData;
-use Fakeeh\Assessments\Tests\TestCase;
+use Amryami\Assessments\Tests\Concerns\CreatesReportData;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Artisan;
 
 class AdminReportsCommandTest extends TestCase

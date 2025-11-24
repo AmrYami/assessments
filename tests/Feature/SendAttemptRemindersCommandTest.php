@@ -1,10 +1,10 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Fakeeh\Assessments\Domain\Models\Attempt;
-use Fakeeh\Assessments\Tests\Fixtures\User;
-use Fakeeh\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Tests\Fixtures\User;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;

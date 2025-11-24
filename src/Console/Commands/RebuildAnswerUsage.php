@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Fakeeh\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
-use Fakeeh\Assessments\Services\AnswerUsageService;
+use Amryami\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
+use Amryami\Assessments\Services\AnswerUsageService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 

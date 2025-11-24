@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Fakeeh\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Attempt;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 

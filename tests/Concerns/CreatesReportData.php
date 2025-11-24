@@ -1,11 +1,11 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Concerns;
+namespace Amryami\Assessments\Tests\Concerns;
 
-use Fakeeh\Assessments\Domain\Models\Attempt;
-use Fakeeh\Assessments\Domain\Models\Exam;
-use Fakeeh\Assessments\Domain\Models\Question;
-use Fakeeh\Assessments\Tests\Fixtures\User;
+use Amryami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Tests\Fixtures\User;
 
 trait CreatesReportData
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Candidate;
+namespace Amryami\Assessments\Http\Controllers\Candidate;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\{
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{
     AnswerKey,
     Attempt,
     AttemptTextAnswer,
@@ -12,16 +12,16 @@ use Fakeeh\Assessments\Domain\Models\{
     QuestionResponsePart,
     ExamRequirement
 };
-use Fakeeh\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
-use Fakeeh\Assessments\Http\Resources\{
+use Amryami\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
+use Amryami\Assessments\Http\Resources\{
     AttemptHeartbeatResource,
     AttemptResultResource,
     AttemptStartResource,
     AttemptSubmitResource
 };
-use Fakeeh\Assessments\Services\AnswerUsageService;
-use Fakeeh\Assessments\Services\ExamAssemblyService;
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Services\AnswerUsageService;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Support\ModelResolver;
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -429,7 +429,7 @@ class AttemptApiController extends Controller
             ],
         ]);
 
-        $req = \Fakeeh\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
+        $req = \Amryami\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
             ->where('exam_id', $attempt->exam_id)
             ->first();
         if ($req) {

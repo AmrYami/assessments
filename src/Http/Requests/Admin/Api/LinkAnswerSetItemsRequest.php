@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Admin\Api;
+namespace Amryami\Assessments\Http\Requests\Admin\Api;
 
-use Fakeeh\Assessments\Support\FormRequest;
+use Amryami\Assessments\Support\FormRequest;
 
 class LinkAnswerSetItemsRequest extends FormRequest
 {

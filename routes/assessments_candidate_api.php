@@ -1,6 +1,6 @@
 <?php
 
-use Fakeeh\Assessments\Http\Controllers\Candidate\AttemptApiController;
+use Amryami\Assessments\Http\Controllers\Candidate\AttemptApiController;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\Route;
 

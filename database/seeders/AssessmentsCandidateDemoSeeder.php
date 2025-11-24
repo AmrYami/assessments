@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Database\Seeders;
+namespace Amryami\Assessments\Database\Seeders;
 
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

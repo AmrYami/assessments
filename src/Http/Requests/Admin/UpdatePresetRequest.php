@@ -1,6 +1,6 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
 use Illuminate\Validation\Rule;
 

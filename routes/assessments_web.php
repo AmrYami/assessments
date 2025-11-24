@@ -1,6 +1,6 @@
 <?php
 
-use Fakeeh\Assessments\Http\Controllers\Admin\{
+use Amryami\Assessments\Http\Controllers\Admin\{
     AnswerSetController,
     ExamController,
     PresetController,

@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Candidate;
+namespace Amryami\Assessments\Http\Requests\Candidate;
 
-use Fakeeh\Assessments\Support\FormRequest;
+use Amryami\Assessments\Support\FormRequest;
 
 class SaveAnswersRequest extends FormRequest
 {

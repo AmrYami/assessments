@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Fakeeh\Assessments\Domain\Models\AnswerSet;
+use Amryami\Assessments\Domain\Models\AnswerSet;
 use Illuminate\Validation\Rule;
 
 class UpdateAnswerSetRequest extends StoreAnswerSetRequest

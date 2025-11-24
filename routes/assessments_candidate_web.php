@@ -1,6 +1,6 @@
 <?php
 
-use Fakeeh\Assessments\Http\Controllers\Candidate\ExamController;
+use Amryami\Assessments\Http\Controllers\Candidate\ExamController;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\Route;
 

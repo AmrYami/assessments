@@ -1,6 +1,6 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests\Fixtures;
+namespace Amryami\Assessments\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,7 +1,21 @@
 <?php
 
-$loader = require __DIR__ . '/../../../vendor/autoload.php';
+$baseDir = dirname(__DIR__);
+$autoloadCandidates = [
+    $baseDir . '/vendor/autoload.php',
+    $baseDir . '/../../../vendor/autoload.php',
+];
 
-if ($loader instanceof Composer\Autoload\ClassLoader) {
-    $loader->addPsr4('Fakeeh\\Assessments\\Tests\\', __DIR__);
+$loader = null;
+foreach ($autoloadCandidates as $autoload) {
+    if (file_exists($autoload)) {
+        $loader = require $autoload;
+        break;
+    }
 }
+
+if (! $loader instanceof Composer\Autoload\ClassLoader) {
+    throw new RuntimeException('Unable to locate Composer autoload.php for Amryami Assessments tests.');
+}
+
+$loader->addPsr4('Amryami\\Assessments\\Tests\\', __DIR__);

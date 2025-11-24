@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
 use Illuminate\Support\Facades\DB;
-use Fakeeh\Assessments\Domain\Models\AnswerUsageAggregate;
+use Amryami\Assessments\Domain\Models\AnswerUsageAggregate;
 
 class AnswerUsageService
 {

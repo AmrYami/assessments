@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Tests;
+namespace Amryami\Assessments\Tests;
 
-use Fakeeh\Assessments\AssessmentsServiceProvider;
-use Fakeeh\Assessments\Tests\Fixtures\AllowMiddleware;
+use Amryami\Assessments\AssessmentsServiceProvider;
+use Amryami\Assessments\Tests\Fixtures\AllowMiddleware;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;
 use Illuminate\Support\Facades\DB;

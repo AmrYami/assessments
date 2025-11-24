@@ -1,11 +1,11 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Contracts\ReviewServiceInterface;
-use Fakeeh\Assessments\Domain\Models\{Attempt, AttemptTextAnswer, Exam, Question};
-use Fakeeh\Assessments\Http\Requests\Admin\UpdateReviewRequest;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{Attempt, AttemptTextAnswer, Exam, Question};
+use Amryami\Assessments\Http\Requests\Admin\UpdateReviewRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 

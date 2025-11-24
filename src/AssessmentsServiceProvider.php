@@ -1,12 +1,12 @@
 <?php
 
-namespace Fakeeh\Assessments;
+namespace Amryami\Assessments;
 
-use Fakeeh\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
-use Fakeeh\Assessments\Contracts\ReviewServiceInterface;
-use Fakeeh\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
-use Fakeeh\Assessments\Services\AttemptReviewService;
-use Fakeeh\Assessments\Services\SchemaHashService;
+use Amryami\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
+use Amryami\Assessments\Services\AttemptReviewService;
+use Amryami\Assessments\Services\SchemaHashService;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;

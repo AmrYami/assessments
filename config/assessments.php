@@ -48,7 +48,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Allow the host application to override key domain models. Defaults
-    | keep backward compatibility with the current Fakeeh project.
+    | keep backward compatibility with the Amryami platform.
     */
     'models' => [
         'category' => env('ASSESSMENTS_MODEL_CATEGORY'),

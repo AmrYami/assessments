@@ -1,8 +1,8 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Fakeeh\Assessments\Domain\Models\Topic;
+use Amryami\Assessments\Domain\Models\Topic;
 use Illuminate\Validation\Rule;
 
 class UpdateTopicRequest extends StoreTopicRequest

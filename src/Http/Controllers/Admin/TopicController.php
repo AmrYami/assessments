@@ -1,10 +1,10 @@
 <?php
 
-namespace Fakeeh\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Fakeeh\Assessments\Support\Controller;
-use Fakeeh\Assessments\Domain\Models\Topic;
-use Fakeeh\Assessments\Http\Requests\Admin\{StoreTopicRequest, UpdateTopicRequest};
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\Topic;
+use Amryami\Assessments\Http\Requests\Admin\{StoreTopicRequest, UpdateTopicRequest};
 
 class TopicController extends Controller
 {

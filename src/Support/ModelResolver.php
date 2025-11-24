@@ -1,6 +1,6 @@
 <?php
 
-namespace Fakeeh\Assessments\Support;
+namespace Amryami\Assessments\Support;
 
 class ModelResolver
 {

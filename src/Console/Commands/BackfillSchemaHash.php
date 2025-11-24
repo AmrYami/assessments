@@ -1,9 +1,9 @@
 <?php
 
-namespace Fakeeh\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Fakeeh\Assessments\Domain\Models\{Exam, Question};
-use Fakeeh\Assessments\Services\SchemaHashService;
+use Amryami\Assessments\Domain\Models\{Exam, Question};
+use Amryami\Assessments\Services\SchemaHashService;
 use Illuminate\Console\Command;
 
 class BackfillSchemaHash extends Command

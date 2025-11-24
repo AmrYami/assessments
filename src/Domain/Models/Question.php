@@ -1,10 +1,10 @@
 <?php
 
-namespace Fakeeh\Assessments\Domain\Models;
+namespace Amryami\Assessments\Domain\Models;
 
-use Fakeeh\Assessments\Services\QuestionPoolCache;
-use Fakeeh\Assessments\Support\BaseModel;
-use Fakeeh\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Services\QuestionPoolCache;
+use Amryami\Assessments\Support\BaseModel;
+use Amryami\Assessments\Support\ModelResolver;
 
 class Question extends BaseModel
 {
