@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Console\Commands;
+namespace Streaming\Assessments\Console\Commands;
 
-use Amryami\Assessments\Domain\Models\{Exam, Question};
-use Amryami\Assessments\Services\SchemaHashService;
+use Streaming\Assessments\Domain\Models\{Exam, Question};
+use Streaming\Assessments\Services\SchemaHashService;
 use Illuminate\Console\Command;
 
 class BackfillSchemaHash extends Command

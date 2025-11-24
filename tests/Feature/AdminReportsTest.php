@@ -1,10 +1,10 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Feature;
+namespace Streaming\Assessments\Tests\Feature;
 
-use Amryami\Assessments\Tests\Concerns\CreatesReportData;
-use Amryami\Assessments\Tests\Fixtures\User;
-use Amryami\Assessments\Tests\TestCase;
+use Streaming\Assessments\Tests\Concerns\CreatesReportData;
+use Streaming\Assessments\Tests\Fixtures\User;
+use Streaming\Assessments\Tests\TestCase;
 use Illuminate\Testing\TestResponse;
 use Illuminate\Support\Facades\View;
 

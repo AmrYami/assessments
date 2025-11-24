@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Services;
+namespace Streaming\Assessments\Services;
 
-use Amryami\Assessments\Domain\Models\Attempt;
-use Amryami\Assessments\Domain\Models\Exam;
+use Streaming\Assessments\Domain\Models\Attempt;
+use Streaming\Assessments\Domain\Models\Exam;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

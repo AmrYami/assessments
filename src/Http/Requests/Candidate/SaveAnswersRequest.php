@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Candidate;
+namespace Streaming\Assessments\Http\Requests\Candidate;
 
-use Amryami\Assessments\Support\FormRequest;
+use Streaming\Assessments\Support\FormRequest;
 
 class SaveAnswersRequest extends FormRequest
 {

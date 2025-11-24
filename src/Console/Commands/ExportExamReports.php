@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Console\Commands;
+namespace Streaming\Assessments\Console\Commands;
 
-use Amryami\Assessments\Domain\Models\Exam;
-use Amryami\Assessments\Services\ExamReportService;
+use Streaming\Assessments\Domain\Models\Exam;
+use Streaming\Assessments\Services\ExamReportService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Candidate;
+namespace Streaming\Assessments\Http\Controllers\Candidate;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\{
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\{
     AnswerKey,
     Attempt,
     AttemptTextAnswer,
@@ -12,16 +12,16 @@ use Amryami\Assessments\Domain\Models\{
     QuestionResponsePart,
     ExamRequirement
 };
-use Amryami\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
-use Amryami\Assessments\Http\Resources\{
+use Streaming\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
+use Streaming\Assessments\Http\Resources\{
     AttemptHeartbeatResource,
     AttemptResultResource,
     AttemptStartResource,
     AttemptSubmitResource
 };
-use Amryami\Assessments\Services\AnswerUsageService;
-use Amryami\Assessments\Services\ExamAssemblyService;
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Services\AnswerUsageService;
+use Streaming\Assessments\Services\ExamAssemblyService;
+use Streaming\Assessments\Support\ModelResolver;
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -429,7 +429,7 @@ class AttemptApiController extends Controller
             ],
         ]);
 
-        $req = \Amryami\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
+        $req = \Streaming\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
             ->where('exam_id', $attempt->exam_id)
             ->first();
         if ($req) {

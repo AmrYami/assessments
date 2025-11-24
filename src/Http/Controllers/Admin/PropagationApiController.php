@@ -1,13 +1,13 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\{Question, Exam, Topic};
-use Amryami\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
-use Amryami\Assessments\Services\PropagationService;
-use Amryami\Assessments\Services\ExamAssemblyService;
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\{Question, Exam, Topic};
+use Streaming\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
+use Streaming\Assessments\Services\PropagationService;
+use Streaming\Assessments\Services\ExamAssemblyService;
+use Streaming\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 
 class PropagationApiController extends Controller

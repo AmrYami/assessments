@@ -1,12 +1,12 @@
 <?php
 
-namespace Amryami\Assessments;
+namespace Streaming\Assessments;
 
-use Amryami\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
-use Amryami\Assessments\Contracts\ReviewServiceInterface;
-use Amryami\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
-use Amryami\Assessments\Services\AttemptReviewService;
-use Amryami\Assessments\Services\SchemaHashService;
+use Streaming\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
+use Streaming\Assessments\Contracts\ReviewServiceInterface;
+use Streaming\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
+use Streaming\Assessments\Services\AttemptReviewService;
+use Streaming\Assessments\Services\SchemaHashService;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;

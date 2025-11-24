@@ -1,13 +1,13 @@
 <?php
 
-namespace Amryami\Assessments\Http\Resources;
+namespace Streaming\Assessments\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class AnswerSetResource extends JsonResource
 {
     /**
-     * @param  \Amryami\Assessments\Domain\Models\AnswerSet  $resource
+     * @param  \Streaming\Assessments\Domain\Models\AnswerSet  $resource
      */
     public function __construct($resource)
     {

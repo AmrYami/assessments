@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Console\Commands;
+namespace Streaming\Assessments\Console\Commands;
 
-use Amryami\Assessments\Domain\Models\Attempt;
+use Streaming\Assessments\Domain\Models\Attempt;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 

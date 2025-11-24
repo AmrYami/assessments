@@ -1,6 +1,6 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Fixtures;
+namespace Streaming\Assessments\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Amryami\Assessments\Services;
+namespace Streaming\Assessments\Services;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 

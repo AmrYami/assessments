@@ -1,11 +1,11 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Contracts\ReviewServiceInterface;
-use Amryami\Assessments\Domain\Models\{Attempt, AttemptTextAnswer, Exam, Question};
-use Amryami\Assessments\Http\Requests\Admin\UpdateReviewRequest;
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Contracts\ReviewServiceInterface;
+use Streaming\Assessments\Domain\Models\{Attempt, AttemptTextAnswer, Exam, Question};
+use Streaming\Assessments\Http\Requests\Admin\UpdateReviewRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 

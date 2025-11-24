@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Admin;
+namespace Streaming\Assessments\Http\Requests\Admin;
 
-use Amryami\Assessments\Domain\Models\AnswerSet;
+use Streaming\Assessments\Domain\Models\AnswerSet;
 use Illuminate\Validation\Rule;
 
 class UpdateAnswerSetRequest extends StoreAnswerSetRequest

@@ -1,11 +1,11 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\ExamRequirement;
-use Amryami\Assessments\Domain\Models\Exam;
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\ExamRequirement;
+use Streaming\Assessments\Domain\Models\Exam;
+use Streaming\Assessments\Support\ModelResolver;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 

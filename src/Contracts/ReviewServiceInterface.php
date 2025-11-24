@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Contracts;
+namespace Streaming\Assessments\Contracts;
 
-use Amryami\Assessments\Domain\Models\Attempt;
+use Streaming\Assessments\Domain\Models\Attempt;
 
 interface ReviewServiceInterface
 {

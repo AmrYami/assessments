@@ -1,11 +1,11 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Concerns;
+namespace Streaming\Assessments\Tests\Concerns;
 
-use Amryami\Assessments\Domain\Models\Attempt;
-use Amryami\Assessments\Domain\Models\Exam;
-use Amryami\Assessments\Domain\Models\Question;
-use Amryami\Assessments\Tests\Fixtures\User;
+use Streaming\Assessments\Domain\Models\Attempt;
+use Streaming\Assessments\Domain\Models\Exam;
+use Streaming\Assessments\Domain\Models\Question;
+use Streaming\Assessments\Tests\Fixtures\User;
 
 trait CreatesReportData
 {

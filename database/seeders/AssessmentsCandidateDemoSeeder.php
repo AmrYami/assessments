@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Database\Seeders;
+namespace Streaming\Assessments\Database\Seeders;
 
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Support\ModelResolver;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

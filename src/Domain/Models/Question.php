@@ -1,10 +1,10 @@
 <?php
 
-namespace Amryami\Assessments\Domain\Models;
+namespace Streaming\Assessments\Domain\Models;
 
-use Amryami\Assessments\Services\QuestionPoolCache;
-use Amryami\Assessments\Support\BaseModel;
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Services\QuestionPoolCache;
+use Streaming\Assessments\Support\BaseModel;
+use Streaming\Assessments\Support\ModelResolver;
 
 class Question extends BaseModel
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Domain\Models;
+namespace Streaming\Assessments\Domain\Models;
 
-use Amryami\Assessments\Support\BaseModel;
+use Streaming\Assessments\Support\BaseModel;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class AnswerSet extends BaseModel

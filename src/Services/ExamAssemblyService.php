@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Services;
+namespace Streaming\Assessments\Services;
 
-use Amryami\Assessments\Domain\Models\{Exam, Question};
+use Streaming\Assessments\Domain\Models\{Exam, Question};
 use Illuminate\Support\Collection;
 
 class ExamAssemblyService

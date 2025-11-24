@@ -1,4 +1,4 @@
-# Releasing `amryami/assessments`
+# Releasing `streaming/assessments`
 
 This package lives inside the main HR monorepo (`packages/assessments`). To publish a new version to Composer/Packagist follow the checklist below.
 
@@ -55,14 +55,14 @@ This package lives inside the main HR monorepo (`packages/assessments`). To publ
    ```bash
    laravel new sandbox
    cd sandbox
-   composer require amryami/assessments:^X.Y
+   composer require streaming/assessments:^X.Y
    php artisan vendor:publish --tag=assessments-config
    php artisan migrate
    ```
 
 9. **Document any host-app steps**
-   - Update the host repository’s `composer.json` constraint (`amryami/assessments": "^X.Y"`).
-   - Run `composer update amryami/assessments` inside the host app.
+   - Update the host repository’s `composer.json` constraint (`streaming/assessments": "^X.Y"`).
+   - Run `composer update streaming/assessments` inside the host app.
    - Note any breaking changes in internal release notes / upgrade guide.
 
 That’s it—each new git tag under `packages/assessments` now maps to an installable Composer release.

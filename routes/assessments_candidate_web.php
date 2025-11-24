@@ -1,6 +1,6 @@
 <?php
 
-use Amryami\Assessments\Http\Controllers\Candidate\ExamController;
+use Streaming\Assessments\Http\Controllers\Candidate\ExamController;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\Route;
 

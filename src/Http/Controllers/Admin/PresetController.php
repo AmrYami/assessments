@@ -1,10 +1,10 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\InputPreset;
-use Amryami\Assessments\Http\Requests\Admin\{StorePresetRequest, UpdatePresetRequest};
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\InputPreset;
+use Streaming\Assessments\Http\Requests\Admin\{StorePresetRequest, UpdatePresetRequest};
 use Illuminate\Http\Request;
 
 class PresetController extends Controller

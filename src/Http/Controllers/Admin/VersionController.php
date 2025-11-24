@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\{Question, Exam};
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\{Question, Exam};
 use Illuminate\Http\Request;
 
 class VersionController extends Controller

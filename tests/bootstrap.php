@@ -15,7 +15,7 @@ foreach ($autoloadCandidates as $autoload) {
 }
 
 if (! $loader instanceof Composer\Autoload\ClassLoader) {
-    throw new RuntimeException('Unable to locate Composer autoload.php for Amryami Assessments tests.');
+    throw new RuntimeException('Unable to locate Composer autoload.php for Streaming Assessments tests.');
 }
 
-$loader->addPsr4('Amryami\\Assessments\\Tests\\', __DIR__);
+$loader->addPsr4('Streaming\\Assessments\\Tests\\', __DIR__);

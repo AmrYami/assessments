@@ -1,10 +1,10 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\Topic;
-use Amryami\Assessments\Http\Requests\Admin\{StoreTopicRequest, UpdateTopicRequest};
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\Topic;
+use Streaming\Assessments\Http\Requests\Admin\{StoreTopicRequest, UpdateTopicRequest};
 
 class TopicController extends Controller
 {

@@ -1,5 +1,5 @@
 {
-    "name": "amryami/assessments",
+    "name": "streaming/assessments",
     "description": "Reusable Assessments (Question Bank & Exams) package for Laravel projects.",
     "type": "library",
     "license": "MIT",
@@ -24,8 +24,8 @@
     "version": "1.0.0-beta",
     "autoload": {
         "psr-4": {
-            "Amryami\\Assessments\\": "src/",
-            "Amryami\\Assessments\\Database\\": "database/"
+            "Streaming\\Assessments\\": "src/",
+            "Streaming\\Assessments\\Database\\": "database/"
         },
         "files": [
             "src/helpers.php"
@@ -33,13 +33,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Amryami\\Assessments\\Tests\\": "tests/"
+            "Streaming\\Assessments\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Amryami\\Assessments\\AssessmentsServiceProvider"
+                "Streaming\\Assessments\\AssessmentsServiceProvider"
             ]
         }
     },

@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Admin;
+namespace Streaming\Assessments\Http\Requests\Admin;
 
-use Amryami\Assessments\Domain\Models\Question;
-use Amryami\Assessments\Support\FormRequest;
+use Streaming\Assessments\Domain\Models\Question;
+use Streaming\Assessments\Support\FormRequest;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;

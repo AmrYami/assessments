@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Admin;
+namespace Streaming\Assessments\Http\Requests\Admin;
 
-use Amryami\Assessments\Support\FormRequest;
+use Streaming\Assessments\Support\FormRequest;
 
 class PreviewPropagationRequest extends FormRequest
 {

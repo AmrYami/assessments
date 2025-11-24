@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Console\Commands;
+namespace Streaming\Assessments\Console\Commands;
 
-use Amryami\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
-use Amryami\Assessments\Services\AnswerUsageService;
+use Streaming\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
+use Streaming\Assessments\Services\AnswerUsageService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 

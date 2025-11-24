@@ -1,11 +1,11 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\AnswerSet;
-use Amryami\Assessments\Domain\Models\AnswerSetItem;
-use Amryami\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\AnswerSet;
+use Streaming\Assessments\Domain\Models\AnswerSetItem;
+use Streaming\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

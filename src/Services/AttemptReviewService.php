@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Services;
+namespace Streaming\Assessments\Services;
 
-use Amryami\Assessments\Contracts\ReviewServiceInterface;
-use Amryami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement};
+use Streaming\Assessments\Contracts\ReviewServiceInterface;
+use Streaming\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement};
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 

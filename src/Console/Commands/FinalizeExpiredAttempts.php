@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Console\Commands;
+namespace Streaming\Assessments\Console\Commands;
 
-use Amryami\Assessments\Domain\Models\{AnswerKey, Attempt, AttemptTextAnswer, Exam, Question};
+use Streaming\Assessments\Domain\Models\{AnswerKey, Attempt, AttemptTextAnswer, Exam, Question};
 use Illuminate\Console\Command;
 
 class FinalizeExpiredAttempts extends Command

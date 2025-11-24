@@ -1,10 +1,10 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Feature;
+namespace Streaming\Assessments\Tests\Feature;
 
-use Amryami\Assessments\Domain\Models\Attempt;
-use Amryami\Assessments\Tests\Fixtures\User;
-use Amryami\Assessments\Tests\TestCase;
+use Streaming\Assessments\Domain\Models\Attempt;
+use Streaming\Assessments\Tests\Fixtures\User;
+use Streaming\Assessments\Tests\TestCase;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;

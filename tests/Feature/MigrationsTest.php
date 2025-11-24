@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Feature;
+namespace Streaming\Assessments\Tests\Feature;
 
-use Amryami\Assessments\Domain\Models\Topic;
-use Amryami\Assessments\Tests\TestCase;
+use Streaming\Assessments\Domain\Models\Topic;
+use Streaming\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 

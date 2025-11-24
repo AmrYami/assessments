@@ -1,11 +1,11 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Feature;
+namespace Streaming\Assessments\Tests\Feature;
 
-use Amryami\Assessments\Contracts\ReviewServiceInterface;
-use Amryami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
-use Amryami\Assessments\Tests\Fixtures\User;
-use Amryami\Assessments\Tests\TestCase;
+use Streaming\Assessments\Contracts\ReviewServiceInterface;
+use Streaming\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
+use Streaming\Assessments\Tests\Fixtures\User;
+use Streaming\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class ReviewServiceTest extends TestCase

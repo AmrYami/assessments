@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Admin;
+namespace Streaming\Assessments\Http\Requests\Admin;
 
-use Amryami\Assessments\Domain\Models\Question;
+use Streaming\Assessments\Domain\Models\Question;
 use Illuminate\Validation\Rule;
 
 class UpdateQuestionRequest extends StoreQuestionRequest

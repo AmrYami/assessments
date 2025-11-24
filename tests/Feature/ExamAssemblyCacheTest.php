@@ -1,12 +1,12 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Feature;
+namespace Streaming\Assessments\Tests\Feature;
 
-use Amryami\Assessments\Domain\Models\Exam;
-use Amryami\Assessments\Domain\Models\Question;
-use Amryami\Assessments\Services\ExamAssemblyService;
-use Amryami\Assessments\Services\QuestionPoolCache;
-use Amryami\Assessments\Tests\TestCase;
+use Streaming\Assessments\Domain\Models\Exam;
+use Streaming\Assessments\Domain\Models\Question;
+use Streaming\Assessments\Services\ExamAssemblyService;
+use Streaming\Assessments\Services\QuestionPoolCache;
+use Streaming\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 
 class ExamAssemblyCacheTest extends TestCase

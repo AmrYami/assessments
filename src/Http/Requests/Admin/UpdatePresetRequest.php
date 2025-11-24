@@ -1,6 +1,6 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Admin;
+namespace Streaming\Assessments\Http\Requests\Admin;
 
 use Illuminate\Validation\Rule;
 

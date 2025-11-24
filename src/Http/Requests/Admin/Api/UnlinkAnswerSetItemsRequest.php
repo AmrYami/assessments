@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Http\Requests\Admin\Api;
+namespace Streaming\Assessments\Http\Requests\Admin\Api;
 
-use Amryami\Assessments\Support\FormRequest;
+use Streaming\Assessments\Support\FormRequest;
 
 class UnlinkAnswerSetItemsRequest extends FormRequest
 {

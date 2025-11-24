@@ -1,6 +1,6 @@
 <?php
 
-use Amryami\Assessments\Http\Controllers\Admin\{
+use Streaming\Assessments\Http\Controllers\Admin\{
     AnswerSetApiController,
     ExamController,
     PresetController,

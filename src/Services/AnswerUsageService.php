@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Services;
+namespace Streaming\Assessments\Services;
 
 use Illuminate\Support\Facades\DB;
-use Amryami\Assessments\Domain\Models\AnswerUsageAggregate;
+use Streaming\Assessments\Domain\Models\AnswerUsageAggregate;
 
 class AnswerUsageService
 {

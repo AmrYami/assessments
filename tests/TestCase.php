@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Tests;
+namespace Streaming\Assessments\Tests;
 
-use Amryami\Assessments\AssessmentsServiceProvider;
-use Amryami\Assessments\Tests\Fixtures\AllowMiddleware;
+use Streaming\Assessments\AssessmentsServiceProvider;
+use Streaming\Assessments\Tests\Fixtures\AllowMiddleware;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;
 use Illuminate\Support\Facades\DB;

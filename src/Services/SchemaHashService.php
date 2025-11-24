@@ -1,8 +1,8 @@
 <?php
 
-namespace Amryami\Assessments\Services;
+namespace Streaming\Assessments\Services;
 
-use Amryami\Assessments\Domain\Models\{Question, Exam, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
+use Streaming\Assessments\Domain\Models\{Question, Exam, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
 use Illuminate\Support\Facades\DB;
 
 class SchemaHashService

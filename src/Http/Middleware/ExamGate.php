@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Http\Middleware;
+namespace Streaming\Assessments\Http\Middleware;
 
-use Amryami\Assessments\Domain\Models\{ExamRequirement, Exam};
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Domain\Models\{ExamRequirement, Exam};
+use Streaming\Assessments\Support\ModelResolver;
 use Closure;
 use Illuminate\Http\Request;
 

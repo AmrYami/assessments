@@ -1,12 +1,12 @@
 <?php
 
-namespace Amryami\Assessments\Tests\Feature;
+namespace Streaming\Assessments\Tests\Feature;
 
-use Amryami\Assessments\Domain\Models\{Attempt, Exam};
-use Amryami\Assessments\Domain\Models\{AnswerKey, Question, QuestionOption};
-use Amryami\Assessments\Domain\Models\Topic;
-use Amryami\Assessments\Tests\Fixtures\User;
-use Amryami\Assessments\Tests\TestCase;
+use Streaming\Assessments\Domain\Models\{Attempt, Exam};
+use Streaming\Assessments\Domain\Models\{AnswerKey, Question, QuestionOption};
+use Streaming\Assessments\Domain\Models\Topic;
+use Streaming\Assessments\Tests\Fixtures\User;
+use Streaming\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class CandidateAttemptApiTest extends TestCase

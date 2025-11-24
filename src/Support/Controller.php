@@ -1,6 +1,6 @@
 <?php
 
-namespace Amryami\Assessments\Support;
+namespace Streaming\Assessments\Support;
 
 use Illuminate\Routing\Controller as IlluminateController;
 

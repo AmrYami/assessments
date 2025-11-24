@@ -1,6 +1,6 @@
 <?php
 
-namespace Amryami\Assessments\Support;
+namespace Streaming\Assessments\Support;
 
 class ModelResolver
 {

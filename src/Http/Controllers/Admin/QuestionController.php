@@ -1,9 +1,9 @@
 <?php
 
-namespace Amryami\Assessments\Http\Controllers\Admin;
+namespace Streaming\Assessments\Http\Controllers\Admin;
 
-use Amryami\Assessments\Support\Controller;
-use Amryami\Assessments\Domain\Models\{
+use Streaming\Assessments\Support\Controller;
+use Streaming\Assessments\Domain\Models\{
     AnswerKey,
     AnswerSet,
     AnswerSetItem,
@@ -13,8 +13,8 @@ use Amryami\Assessments\Domain\Models\{
     QuestionResponsePart,
     Topic
 };
-use Amryami\Assessments\Http\Requests\Admin\{StoreQuestionRequest, UpdateQuestionRequest};
-use Amryami\Assessments\Support\ModelResolver;
+use Streaming\Assessments\Http\Requests\Admin\{StoreQuestionRequest, UpdateQuestionRequest};
+use Streaming\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -460,7 +460,7 @@ class QuestionController extends Controller
     {
         try {
             $question->load(['options', 'answerLinks', 'responseParts']);
-            $hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForQuestion($question);
+            $hash = app(\Streaming\Assessments\Services\SchemaHashService::class)->computeForQuestion($question);
             $question->schema_hash = $hash;
             $question->save();
         } catch (\Throwable $e) {
