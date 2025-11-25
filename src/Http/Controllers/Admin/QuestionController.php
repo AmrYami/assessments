@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\{
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\{
     AnswerKey,
     AnswerSet,
     AnswerSetItem,
@@ -13,8 +13,8 @@ use Streaming\Assessments\Domain\Models\{
     QuestionResponsePart,
     Topic
 };
-use Streaming\Assessments\Http\Requests\Admin\{StoreQuestionRequest, UpdateQuestionRequest};
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Http\Requests\Admin\{StoreQuestionRequest, UpdateQuestionRequest};
+use Yami\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -460,7 +460,7 @@ class QuestionController extends Controller
     {
         try {
             $question->load(['options', 'answerLinks', 'responseParts']);
-            $hash = app(\Streaming\Assessments\Services\SchemaHashService::class)->computeForQuestion($question);
+            $hash = app(\Yami\Assessments\Services\SchemaHashService::class)->computeForQuestion($question);
             $question->schema_hash = $hash;
             $question->save();
         } catch (\Throwable $e) {

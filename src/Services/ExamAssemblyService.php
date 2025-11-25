@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Services;
+namespace Yami\Assessments\Services;
 
-use Streaming\Assessments\Domain\Models\{Exam, Question};
+use Yami\Assessments\Domain\Models\{Exam, Question};
 use Illuminate\Support\Collection;
 
 class ExamAssemblyService

@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Tests;
+namespace Yami\Assessments\Tests;
 
-use Streaming\Assessments\AssessmentsServiceProvider;
-use Streaming\Assessments\Tests\Fixtures\AllowMiddleware;
+use Yami\Assessments\AssessmentsServiceProvider;
+use Yami\Assessments\Tests\Fixtures\AllowMiddleware;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\Concerns\InteractsWithDatabase;
 use Illuminate\Support\Facades\DB;

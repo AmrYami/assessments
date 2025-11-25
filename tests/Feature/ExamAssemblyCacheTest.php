@@ -1,12 +1,12 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Domain\Models\Exam;
-use Streaming\Assessments\Domain\Models\Question;
-use Streaming\Assessments\Services\ExamAssemblyService;
-use Streaming\Assessments\Services\QuestionPoolCache;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Domain\Models\Question;
+use Yami\Assessments\Services\ExamAssemblyService;
+use Yami\Assessments\Services\QuestionPoolCache;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 
 class ExamAssemblyCacheTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Domain\Models;
+namespace Yami\Assessments\Domain\Models;
 
-use Streaming\Assessments\Support\BaseModel;
+use Yami\Assessments\Support\BaseModel;
 
 class QuestionOption extends BaseModel
 {

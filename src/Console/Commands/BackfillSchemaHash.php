@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Console\Commands;
+namespace Yami\Assessments\Console\Commands;
 
-use Streaming\Assessments\Domain\Models\{Exam, Question};
-use Streaming\Assessments\Services\SchemaHashService;
+use Yami\Assessments\Domain\Models\{Exam, Question};
+use Yami\Assessments\Services\SchemaHashService;
 use Illuminate\Console\Command;
 
 class BackfillSchemaHash extends Command

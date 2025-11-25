@@ -1,10 +1,10 @@
 <?php
 
-namespace Streaming\Assessments\Domain\Models;
+namespace Yami\Assessments\Domain\Models;
 
-use Streaming\Assessments\Services\QuestionPoolCache;
-use Streaming\Assessments\Support\BaseModel;
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Services\QuestionPoolCache;
+use Yami\Assessments\Support\BaseModel;
+use Yami\Assessments\Support\ModelResolver;
 
 class Question extends BaseModel
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Streaming\Assessments\Support;
+namespace Yami\Assessments\Support;
 
 use Illuminate\Routing\Controller as IlluminateController;
 

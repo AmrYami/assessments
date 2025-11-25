@@ -1,6 +1,6 @@
 <?php
 
-namespace Streaming\Assessments\Services;
+namespace Yami\Assessments\Services;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 

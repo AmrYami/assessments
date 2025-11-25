@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Candidate;
+namespace Yami\Assessments\Http\Controllers\Candidate;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\{
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\{
     AnswerKey,
     Attempt,
     AttemptTextAnswer,
@@ -12,16 +12,16 @@ use Streaming\Assessments\Domain\Models\{
     QuestionResponsePart,
     ExamRequirement
 };
-use Streaming\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
-use Streaming\Assessments\Http\Resources\{
+use Yami\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
+use Yami\Assessments\Http\Resources\{
     AttemptHeartbeatResource,
     AttemptResultResource,
     AttemptStartResource,
     AttemptSubmitResource
 };
-use Streaming\Assessments\Services\AnswerUsageService;
-use Streaming\Assessments\Services\ExamAssemblyService;
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Services\AnswerUsageService;
+use Yami\Assessments\Services\ExamAssemblyService;
+use Yami\Assessments\Support\ModelResolver;
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -429,7 +429,7 @@ class AttemptApiController extends Controller
             ],
         ]);
 
-        $req = \Streaming\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
+        $req = \Yami\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
             ->where('exam_id', $attempt->exam_id)
             ->first();
         if ($req) {

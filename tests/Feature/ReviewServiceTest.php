@@ -1,11 +1,11 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Contracts\ReviewServiceInterface;
-use Streaming\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
-use Streaming\Assessments\Tests\Fixtures\User;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Contracts\ReviewServiceInterface;
+use Yami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
+use Yami\Assessments\Tests\Fixtures\User;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class ReviewServiceTest extends TestCase

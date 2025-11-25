@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Admin;
+namespace Yami\Assessments\Http\Requests\Admin;
 
-use Streaming\Assessments\Support\FormRequest;
+use Yami\Assessments\Support\FormRequest;
 
 class PreviewPropagationRequest extends FormRequest
 {

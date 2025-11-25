@@ -1,11 +1,11 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Concerns;
+namespace Yami\Assessments\Tests\Concerns;
 
-use Streaming\Assessments\Domain\Models\Attempt;
-use Streaming\Assessments\Domain\Models\Exam;
-use Streaming\Assessments\Domain\Models\Question;
-use Streaming\Assessments\Tests\Fixtures\User;
+use Yami\Assessments\Domain\Models\Attempt;
+use Yami\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Domain\Models\Question;
+use Yami\Assessments\Tests\Fixtures\User;
 
 trait CreatesReportData
 {

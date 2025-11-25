@@ -1,5 +1,5 @@
 {
-    "name": "streaming/assessments",
+    "name": "Yami/assessments",
     "description": "Reusable Assessments (Question Bank & Exams) package for Laravel projects.",
     "type": "library",
     "license": "MIT",
@@ -23,8 +23,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Streaming\\Assessments\\": "src/",
-            "Streaming\\Assessments\\Database\\": "database/"
+            "Yami\\Assessments\\": "src/",
+            "Yami\\Assessments\\Database\\": "database/"
         },
         "files": [
             "src/helpers.php"
@@ -32,13 +32,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Streaming\\Assessments\\Tests\\": "tests/"
+            "Yami\\Assessments\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Streaming\\Assessments\\AssessmentsServiceProvider"
+                "Yami\\Assessments\\AssessmentsServiceProvider"
             ]
         }
     },

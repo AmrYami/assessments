@@ -1,12 +1,12 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Domain\Models\{Attempt, Exam};
-use Streaming\Assessments\Domain\Models\{AnswerKey, Question, QuestionOption};
-use Streaming\Assessments\Domain\Models\Topic;
-use Streaming\Assessments\Tests\Fixtures\User;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Domain\Models\{Attempt, Exam};
+use Yami\Assessments\Domain\Models\{AnswerKey, Question, QuestionOption};
+use Yami\Assessments\Domain\Models\Topic;
+use Yami\Assessments\Tests\Fixtures\User;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class CandidateAttemptApiTest extends TestCase

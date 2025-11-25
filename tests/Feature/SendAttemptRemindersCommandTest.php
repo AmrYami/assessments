@@ -1,10 +1,10 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Domain\Models\Attempt;
-use Streaming\Assessments\Tests\Fixtures\User;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Domain\Models\Attempt;
+use Yami\Assessments\Tests\Fixtures\User;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;

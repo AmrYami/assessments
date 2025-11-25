@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Services;
+namespace Yami\Assessments\Services;
 
-use Streaming\Assessments\Domain\Models\{Question, Exam, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
+use Yami\Assessments\Domain\Models\{Question, Exam, QuestionOption, AnswerKey, QuestionAnswer, QuestionResponsePart};
 use Illuminate\Support\Facades\DB;
 
 class SchemaHashService

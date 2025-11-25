@@ -1,6 +1,6 @@
 <?php
 
-namespace Streaming\Assessments\Database\Seeders;
+namespace Yami\Assessments\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;

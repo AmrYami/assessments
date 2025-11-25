@@ -6,24 +6,24 @@
  */
 
 $aliases = [
-    \App\Assessments\Domain\Models\Topic::class => \Streaming\Assessments\Domain\Models\Topic::class,
-    \App\Assessments\Domain\Models\Question::class => \Streaming\Assessments\Domain\Models\Question::class,
-    \App\Assessments\Domain\Models\QuestionOption::class => \Streaming\Assessments\Domain\Models\QuestionOption::class,
-    \App\Assessments\Domain\Models\QuestionAnswer::class => \Streaming\Assessments\Domain\Models\QuestionAnswer::class,
-    \App\Assessments\Domain\Models\QuestionWidget::class => \Streaming\Assessments\Domain\Models\QuestionWidget::class,
-    \App\Assessments\Domain\Models\QuestionPlacement::class => \Streaming\Assessments\Domain\Models\QuestionPlacement::class,
-    \App\Assessments\Domain\Models\QuestionResponsePart::class => \Streaming\Assessments\Domain\Models\QuestionResponsePart::class,
-    \App\Assessments\Domain\Models\Answer::class => \Streaming\Assessments\Domain\Models\Answer::class,
-    \App\Assessments\Domain\Models\AnswerKey::class => \Streaming\Assessments\Domain\Models\AnswerKey::class,
-    \App\Assessments\Domain\Models\AnswerSet::class => \Streaming\Assessments\Domain\Models\AnswerSet::class,
-    \App\Assessments\Domain\Models\AnswerSetItem::class => \Streaming\Assessments\Domain\Models\AnswerSetItem::class,
-    \App\Assessments\Domain\Models\AnswerUsageAggregate::class => \Streaming\Assessments\Domain\Models\AnswerUsageAggregate::class,
-    \App\Assessments\Domain\Models\InputPreset::class => \Streaming\Assessments\Domain\Models\InputPreset::class,
-    \App\Assessments\Domain\Models\Exam::class => \Streaming\Assessments\Domain\Models\Exam::class,
-    \App\Assessments\Domain\Models\ExamPlacement::class => \Streaming\Assessments\Domain\Models\ExamPlacement::class,
-    \App\Assessments\Domain\Models\ExamRequirement::class => \Streaming\Assessments\Domain\Models\ExamRequirement::class,
-    \App\Assessments\Domain\Models\Attempt::class => \Streaming\Assessments\Domain\Models\Attempt::class,
-    \App\Assessments\Domain\Models\AttemptTextAnswer::class => \Streaming\Assessments\Domain\Models\AttemptTextAnswer::class,
+    \App\Assessments\Domain\Models\Topic::class => \Yami\Assessments\Domain\Models\Topic::class,
+    \App\Assessments\Domain\Models\Question::class => \Yami\Assessments\Domain\Models\Question::class,
+    \App\Assessments\Domain\Models\QuestionOption::class => \Yami\Assessments\Domain\Models\QuestionOption::class,
+    \App\Assessments\Domain\Models\QuestionAnswer::class => \Yami\Assessments\Domain\Models\QuestionAnswer::class,
+    \App\Assessments\Domain\Models\QuestionWidget::class => \Yami\Assessments\Domain\Models\QuestionWidget::class,
+    \App\Assessments\Domain\Models\QuestionPlacement::class => \Yami\Assessments\Domain\Models\QuestionPlacement::class,
+    \App\Assessments\Domain\Models\QuestionResponsePart::class => \Yami\Assessments\Domain\Models\QuestionResponsePart::class,
+    \App\Assessments\Domain\Models\Answer::class => \Yami\Assessments\Domain\Models\Answer::class,
+    \App\Assessments\Domain\Models\AnswerKey::class => \Yami\Assessments\Domain\Models\AnswerKey::class,
+    \App\Assessments\Domain\Models\AnswerSet::class => \Yami\Assessments\Domain\Models\AnswerSet::class,
+    \App\Assessments\Domain\Models\AnswerSetItem::class => \Yami\Assessments\Domain\Models\AnswerSetItem::class,
+    \App\Assessments\Domain\Models\AnswerUsageAggregate::class => \Yami\Assessments\Domain\Models\AnswerUsageAggregate::class,
+    \App\Assessments\Domain\Models\InputPreset::class => \Yami\Assessments\Domain\Models\InputPreset::class,
+    \App\Assessments\Domain\Models\Exam::class => \Yami\Assessments\Domain\Models\Exam::class,
+    \App\Assessments\Domain\Models\ExamPlacement::class => \Yami\Assessments\Domain\Models\ExamPlacement::class,
+    \App\Assessments\Domain\Models\ExamRequirement::class => \Yami\Assessments\Domain\Models\ExamRequirement::class,
+    \App\Assessments\Domain\Models\Attempt::class => \Yami\Assessments\Domain\Models\Attempt::class,
+    \App\Assessments\Domain\Models\AttemptTextAnswer::class => \Yami\Assessments\Domain\Models\AttemptTextAnswer::class,
 ];
 
 foreach ($aliases as $legacyClass => $packageClass) {
@@ -33,10 +33,10 @@ foreach ($aliases as $legacyClass => $packageClass) {
 }
 
 $serviceProxies = [
-    \Streaming\Assessments\Services\PropagationService::class => \App\Assessments\Services\PropagationService::class,
-    \Streaming\Assessments\Services\ExamAssemblyService::class => \App\Assessments\Services\ExamAssemblyService::class,
-    \Streaming\Assessments\Services\AnswerUsageService::class => \App\Assessments\Services\AnswerUsageService::class,
-    \Streaming\Assessments\Services\SchemaHashService::class => \App\Assessments\Services\SchemaHashService::class,
+    \Yami\Assessments\Services\PropagationService::class => \App\Assessments\Services\PropagationService::class,
+    \Yami\Assessments\Services\ExamAssemblyService::class => \App\Assessments\Services\ExamAssemblyService::class,
+    \Yami\Assessments\Services\AnswerUsageService::class => \App\Assessments\Services\AnswerUsageService::class,
+    \Yami\Assessments\Services\SchemaHashService::class => \App\Assessments\Services\SchemaHashService::class,
 ];
 
 foreach ($serviceProxies as $packageClass => $hostClass) {

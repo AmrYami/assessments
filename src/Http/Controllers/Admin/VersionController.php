@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\{Question, Exam};
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\{Question, Exam};
 use Illuminate\Http\Request;
 
 class VersionController extends Controller

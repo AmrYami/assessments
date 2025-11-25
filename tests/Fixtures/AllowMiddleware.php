@@ -1,6 +1,6 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Fixtures;
+namespace Yami\Assessments\Tests\Fixtures;
 
 class AllowMiddleware
 {

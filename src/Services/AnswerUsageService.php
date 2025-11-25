@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Services;
+namespace Yami\Assessments\Services;
 
 use Illuminate\Support\Facades\DB;
-use Streaming\Assessments\Domain\Models\AnswerUsageAggregate;
+use Yami\Assessments\Domain\Models\AnswerUsageAggregate;
 
 class AnswerUsageService
 {

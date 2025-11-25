@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Admin;
+namespace Yami\Assessments\Http\Requests\Admin;
 
-use Streaming\Assessments\Domain\Models\Topic;
+use Yami\Assessments\Domain\Models\Topic;
 use Illuminate\Validation\Rule;
 
 class UpdateTopicRequest extends StoreTopicRequest

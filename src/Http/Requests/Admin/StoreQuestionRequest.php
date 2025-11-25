@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Admin;
+namespace Yami\Assessments\Http\Requests\Admin;
 
-use Streaming\Assessments\Domain\Models\Question;
-use Streaming\Assessments\Support\FormRequest;
+use Yami\Assessments\Domain\Models\Question;
+use Yami\Assessments\Support\FormRequest;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;

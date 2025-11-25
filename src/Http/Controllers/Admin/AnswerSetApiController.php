@@ -1,14 +1,14 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\AnswerSet;
-use Streaming\Assessments\Domain\Models\AnswerSetItem;
-use Streaming\Assessments\Domain\Models\Question;
-use Streaming\Assessments\Domain\Models\QuestionAnswer;
-use Streaming\Assessments\Http\Requests\Admin\Api\{LinkAnswerSetItemsRequest, StoreAnswerSetRequest, UnlinkAnswerSetItemsRequest};
-use Streaming\Assessments\Http\Resources\AnswerSetResource;
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\AnswerSet;
+use Yami\Assessments\Domain\Models\AnswerSetItem;
+use Yami\Assessments\Domain\Models\Question;
+use Yami\Assessments\Domain\Models\QuestionAnswer;
+use Yami\Assessments\Http\Requests\Admin\Api\{LinkAnswerSetItemsRequest, StoreAnswerSetRequest, UnlinkAnswerSetItemsRequest};
+use Yami\Assessments\Http\Resources\AnswerSetResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
@@ -113,7 +113,7 @@ class AnswerSetApiController extends Controller
     protected function refreshQuestionSchema(Question $question): void
     {
         try {
-            $hash = app(\Streaming\Assessments\Services\SchemaHashService::class)->computeForQuestion($question->fresh());
+            $hash = app(\Yami\Assessments\Services\SchemaHashService::class)->computeForQuestion($question->fresh());
             $question->schema_hash = $hash;
             $question->save();
         } catch (\Throwable $e) {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\ExamRequirement;
-use Streaming\Assessments\Domain\Models\Exam;
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\ExamRequirement;
+use Yami\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Support\ModelResolver;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 

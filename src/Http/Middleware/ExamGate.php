@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Http\Middleware;
+namespace Yami\Assessments\Http\Middleware;
 
-use Streaming\Assessments\Domain\Models\{ExamRequirement, Exam};
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Domain\Models\{ExamRequirement, Exam};
+use Yami\Assessments\Support\ModelResolver;
 use Closure;
 use Illuminate\Http\Request;
 

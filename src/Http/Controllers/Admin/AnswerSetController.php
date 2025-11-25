@@ -1,11 +1,11 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\AnswerSet;
-use Streaming\Assessments\Domain\Models\AnswerSetItem;
-use Streaming\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\AnswerSet;
+use Yami\Assessments\Domain\Models\AnswerSetItem;
+use Yami\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Console\Commands;
+namespace Yami\Assessments\Console\Commands;
 
-use Streaming\Assessments\Domain\Models\Exam;
-use Streaming\Assessments\Services\ExamReportService;
+use Yami\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Services\ExamReportService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

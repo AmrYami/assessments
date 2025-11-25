@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Console\Commands;
+namespace Yami\Assessments\Console\Commands;
 
-use Streaming\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
-use Streaming\Assessments\Services\AnswerUsageService;
+use Yami\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
+use Yami\Assessments\Services\AnswerUsageService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 

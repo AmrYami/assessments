@@ -1,10 +1,10 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\InputPreset;
-use Streaming\Assessments\Http\Requests\Admin\{StorePresetRequest, UpdatePresetRequest};
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\InputPreset;
+use Yami\Assessments\Http\Requests\Admin\{StorePresetRequest, UpdatePresetRequest};
 use Illuminate\Http\Request;
 
 class PresetController extends Controller

@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Contracts;
+namespace Yami\Assessments\Contracts;
 
-use Streaming\Assessments\Domain\Models\Attempt;
+use Yami\Assessments\Domain\Models\Attempt;
 
 interface ReviewServiceInterface
 {

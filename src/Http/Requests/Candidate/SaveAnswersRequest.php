@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Candidate;
+namespace Yami\Assessments\Http\Requests\Candidate;
 
-use Streaming\Assessments\Support\FormRequest;
+use Yami\Assessments\Support\FormRequest;
 
 class SaveAnswersRequest extends FormRequest
 {

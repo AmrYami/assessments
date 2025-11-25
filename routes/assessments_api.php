@@ -1,6 +1,6 @@
 <?php
 
-use Streaming\Assessments\Http\Controllers\Admin\{
+use Yami\Assessments\Http\Controllers\Admin\{
     AnswerSetApiController,
     ExamController,
     PresetController,

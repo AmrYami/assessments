@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Admin;
+namespace Yami\Assessments\Http\Requests\Admin;
 
-use Streaming\Assessments\Domain\Models\AnswerSet;
+use Yami\Assessments\Domain\Models\AnswerSet;
 use Illuminate\Validation\Rule;
 
 class UpdateAnswerSetRequest extends StoreAnswerSetRequest

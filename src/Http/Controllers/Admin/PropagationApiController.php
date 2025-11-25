@@ -1,13 +1,13 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\{Question, Exam, Topic};
-use Streaming\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
-use Streaming\Assessments\Services\PropagationService;
-use Streaming\Assessments\Services\ExamAssemblyService;
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\{Question, Exam, Topic};
+use Yami\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
+use Yami\Assessments\Services\PropagationService;
+use Yami\Assessments\Services\ExamAssemblyService;
+use Yami\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 
 class PropagationApiController extends Controller

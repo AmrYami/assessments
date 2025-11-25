@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Admin;
+namespace Yami\Assessments\Http\Requests\Admin;
 
-use Streaming\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Domain\Models\Exam;
 use Illuminate\Validation\Rule;
 
 class UpdateExamRequest extends StoreExamRequest

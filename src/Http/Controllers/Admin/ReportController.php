@@ -1,10 +1,10 @@
 <?php
 
-namespace Streaming\Assessments\Http\Controllers\Admin;
+namespace Yami\Assessments\Http\Controllers\Admin;
 
-use Streaming\Assessments\Support\Controller;
-use Streaming\Assessments\Domain\Models\Exam;
-use Streaming\Assessments\Services\ExamReportService;
+use Yami\Assessments\Support\Controller;
+use Yami\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Services\ExamReportService;
 
 class ReportController extends Controller
 {

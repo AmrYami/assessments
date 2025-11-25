@@ -1,6 +1,6 @@
 <?php
 
-namespace Streaming\Assessments\Http\Resources;
+namespace Yami\Assessments\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Console\Commands;
+namespace Yami\Assessments\Console\Commands;
 
-use Streaming\Assessments\Domain\Models\Attempt;
+use Yami\Assessments\Domain\Models\Attempt;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Streaming\Assessments;
+namespace Yami\Assessments;
 
-use Streaming\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
-use Streaming\Assessments\Contracts\ReviewServiceInterface;
-use Streaming\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
-use Streaming\Assessments\Services\AttemptReviewService;
-use Streaming\Assessments\Services\SchemaHashService;
+use Yami\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
+use Yami\Assessments\Contracts\ReviewServiceInterface;
+use Yami\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
+use Yami\Assessments\Services\AttemptReviewService;
+use Yami\Assessments\Services\SchemaHashService;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;

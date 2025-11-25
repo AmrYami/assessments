@@ -1,10 +1,10 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Tests\Concerns\CreatesReportData;
-use Streaming\Assessments\Tests\Fixtures\User;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Tests\Concerns\CreatesReportData;
+use Yami\Assessments\Tests\Fixtures\User;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Testing\TestResponse;
 use Illuminate\Support\Facades\View;
 

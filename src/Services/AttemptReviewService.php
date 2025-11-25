@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Services;
+namespace Yami\Assessments\Services;
 
-use Streaming\Assessments\Contracts\ReviewServiceInterface;
-use Streaming\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement};
+use Yami\Assessments\Contracts\ReviewServiceInterface;
+use Yami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement};
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 

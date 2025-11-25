@@ -1,10 +1,10 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Domain\Models\Exam;
-use Streaming\Assessments\Tests\Concerns\CreatesReportData;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Domain\Models\Exam;
+use Yami\Assessments\Tests\Concerns\CreatesReportData;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\View;
 
 class AdminReportsApiTest extends TestCase

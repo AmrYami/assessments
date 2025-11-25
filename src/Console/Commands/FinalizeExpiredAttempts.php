@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Console\Commands;
+namespace Yami\Assessments\Console\Commands;
 
-use Streaming\Assessments\Domain\Models\{AnswerKey, Attempt, AttemptTextAnswer, Exam, Question};
+use Yami\Assessments\Domain\Models\{AnswerKey, Attempt, AttemptTextAnswer, Exam, Question};
 use Illuminate\Console\Command;
 
 class FinalizeExpiredAttempts extends Command

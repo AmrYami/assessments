@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Database\Seeders;
+namespace Yami\Assessments\Database\Seeders;
 
-use Streaming\Assessments\Support\ModelResolver;
+use Yami\Assessments\Support\ModelResolver;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

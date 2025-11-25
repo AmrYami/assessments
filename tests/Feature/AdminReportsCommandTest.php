@@ -1,9 +1,9 @@
 <?php
 
-namespace Streaming\Assessments\Tests\Feature;
+namespace Yami\Assessments\Tests\Feature;
 
-use Streaming\Assessments\Tests\Concerns\CreatesReportData;
-use Streaming\Assessments\Tests\TestCase;
+use Yami\Assessments\Tests\Concerns\CreatesReportData;
+use Yami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Artisan;
 
 class AdminReportsCommandTest extends TestCase

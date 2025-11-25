@@ -1,8 +1,8 @@
 <?php
 
-namespace Streaming\Assessments\Http\Requests\Admin\Api;
+namespace Yami\Assessments\Http\Requests\Admin\Api;
 
-use Streaming\Assessments\Support\FormRequest;
+use Yami\Assessments\Support\FormRequest;
 use Illuminate\Validation\Rule;
 
 class StoreAnswerSetRequest extends FormRequest
