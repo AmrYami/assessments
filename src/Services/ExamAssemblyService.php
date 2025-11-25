@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Yami\Assessments\Domain\Models\{Exam, Question};
+use Amryami\Assessments\Domain\Models\{Exam, Question};
 use Illuminate\Support\Collection;
 
 class ExamAssemblyService

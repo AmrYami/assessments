@@ -1,6 +1,6 @@
 <?php
 
-namespace Yami\Assessments\Support;
+namespace Amryami\Assessments\Support;
 
 class ModelResolver
 {

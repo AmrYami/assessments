@@ -1,11 +1,11 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\ExamRequirement;
-use Yami\Assessments\Domain\Models\Exam;
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\ExamRequirement;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Yami\Assessments\Http\Resources;
+namespace Amryami\Assessments\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class AnswerSetResource extends JsonResource
 {
     /**
-     * @param  \Yami\Assessments\Domain\Models\AnswerSet  $resource
+     * @param  \Amryami\Assessments\Domain\Models\AnswerSet  $resource
      */
     public function __construct($resource)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yami\Assessments\Database\Seeders;
+namespace Amryami\Assessments\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;

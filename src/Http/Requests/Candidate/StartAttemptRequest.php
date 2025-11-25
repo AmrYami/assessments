@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Http\Requests\Candidate;
+namespace Amryami\Assessments\Http\Requests\Candidate;
 
-use Yami\Assessments\Support\FormRequest;
+use Amryami\Assessments\Support\FormRequest;
 
 class StartAttemptRequest extends FormRequest
 {

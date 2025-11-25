@@ -1,6 +1,6 @@
 <?php
 
-namespace Yami\Assessments\Tests\Fixtures;
+namespace Amryami\Assessments\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Domain\Models;
+namespace Amryami\Assessments\Domain\Models;
 
-use Yami\Assessments\Support\BaseModel;
+use Amryami\Assessments\Support\BaseModel;
 
 class Topic extends BaseModel
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Yami\Assessments\Contracts\ReviewServiceInterface;
-use Yami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement};
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement};
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 

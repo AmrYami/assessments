@@ -1,11 +1,11 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\AnswerSet;
-use Yami\Assessments\Domain\Models\AnswerSetItem;
-use Yami\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\AnswerSet;
+use Amryami\Assessments\Domain\Models\AnswerSetItem;
+use Amryami\Assessments\Http\Requests\Admin\{StoreAnswerSetRequest, UpdateAnswerSetRequest};
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 

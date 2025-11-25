@@ -1,12 +1,12 @@
 <?php
 
-namespace Yami\Assessments;
+namespace Amryami\Assessments;
 
-use Yami\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
-use Yami\Assessments\Contracts\ReviewServiceInterface;
-use Yami\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
-use Yami\Assessments\Services\AttemptReviewService;
-use Yami\Assessments\Services\SchemaHashService;
+use Amryami\Assessments\Console\Commands\{BackfillSchemaHash, FinalizeExpiredAttempts, ExportExamReports, RebuildAnswerUsage, SendAttemptReminders};
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{AnswerSet, Attempt, Exam, InputPreset, Question, Topic};
+use Amryami\Assessments\Services\AttemptReviewService;
+use Amryami\Assessments\Services\SchemaHashService;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\{Exam, Topic, Question};
-use Yami\Assessments\Http\Requests\Admin\{StoreExamRequest, UpdateExamRequest};
-use Yami\Assessments\Services\ExamAssemblyService;
-use Yami\Assessments\Services\SchemaHashService;
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{Exam, Topic, Question};
+use Amryami\Assessments\Http\Requests\Admin\{StoreExamRequest, UpdateExamRequest};
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Services\SchemaHashService;
+use Amryami\Assessments\Support\ModelResolver;
 
 class ExamController extends Controller
 {
@@ -82,7 +82,7 @@ class ExamController extends Controller
             }
         }
 
-        try { $hash = app(\Yami\Assessments\Services\SchemaHashService::class)->computeForExam($exam); $exam->schema_hash = $hash; $exam->save(); } catch (\Throwable $e) {}
+        try { $hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForExam($exam); $exam->schema_hash = $hash; $exam->save(); } catch (\Throwable $e) {}
         return redirect()->route('dashboard.assessments.exams.edit', $exam)->with('success', 'Exam created');
     }
 
@@ -130,7 +130,7 @@ class ExamController extends Controller
             }
         }
 
-        try { $hash = app(\Yami\Assessments\Services\SchemaHashService::class)->computeForExam($exam); $exam->schema_hash = $hash; $exam->save(); } catch (\Throwable $e) {}
+        try { $hash = app(\Amryami\Assessments\Services\SchemaHashService::class)->computeForExam($exam); $exam->schema_hash = $hash; $exam->save(); } catch (\Throwable $e) {}
         return redirect()->route('dashboard.assessments.exams.edit', $exam)->with('success', 'Exam updated');
     }
 
@@ -140,7 +140,7 @@ class ExamController extends Controller
         if ($exam->assembly_mode === 'manual' && $exam->questions()->count() < 1) {
             return back()->with('error', 'Cannot publish an empty manual exam.');
         }
-        $assembly = app(\Yami\Assessments\Services\ExamAssemblyService::class);
+        $assembly = app(\Amryami\Assessments\Services\ExamAssemblyService::class);
         $pool = $assembly->buildPool($exam);
         $strict = config('assessments.assembly.strict');
         $warning = null;
@@ -215,7 +215,7 @@ class ExamController extends Controller
     public function coverage(Exam $exam)
     {
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
-        $assembly = app(\Yami\Assessments\Services\ExamAssemblyService::class);
+        $assembly = app(\Amryami\Assessments\Services\ExamAssemblyService::class);
         $pool = $assembly->buildPool($exam);
         $strict = config('assessments.assembly.strict');
         $allowTolerance = !$strict;

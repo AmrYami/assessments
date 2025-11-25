@@ -1,11 +1,11 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Contracts\ReviewServiceInterface;
-use Yami\Assessments\Domain\Models\{Attempt, AttemptTextAnswer, Exam, Question};
-use Yami\Assessments\Http\Requests\Admin\UpdateReviewRequest;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{Attempt, AttemptTextAnswer, Exam, Question};
+use Amryami\Assessments\Http\Requests\Admin\UpdateReviewRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 

@@ -1,6 +1,6 @@
-# Yami Assessments Package
+# Amryami Assessments Package
 
-[![CI](https://github.com/Yami/assessments/actions/workflows/assessments-ci.yml/badge.svg)](https://github.com/Yami/assessments/actions/workflows/assessments-ci.yml)
+[![CI](https://github.com/Amryami/assessments/actions/workflows/assessments-ci.yml/badge.svg)](https://github.com/Amryami/assessments/actions/workflows/assessments-ci.yml)
 [![PHP](https://img.shields.io/badge/PHP-8.3%2B-777bb3?logo=php)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -18,7 +18,7 @@ Reusable Assessments (question bank + exams) module packaged for Laravel 12 proj
 
 1. Require the package in your Laravel application:
    ```bash
-   composer require Yami/assessments:^1.0.0-beta
+   composer require Amryami/assessments:^1.0.0-beta
    ```
 2. Publish the configuration file so you can point the package to your Category & User models, guards, and route prefixes:
    ```bash
@@ -30,7 +30,7 @@ Reusable Assessments (question bank + exams) module packaged for Laravel 12 proj
    ```
 4. Seed the default permissions / demo data if desired:
    ```bash
-   php artisan db:seed --class="Yami\\Assessments\\Database\\Seeders\\AssessmentsPermissionSeeder"
+   php artisan db:seed --class="Amryami\\Assessments\\Database\\Seeders\\AssessmentsPermissionSeeder"
    ```
 
 Routes, views, migrations, and config are auto-registered by the service provider. No manual service provider registration is required in Laravel 10+ thanks to package auto-discovery.
@@ -53,7 +53,7 @@ When hacking inside this monorepo you can keep using a local path repository so 
 Then require the dev build:
 
 ```bash
-composer require Yami/assessments:@dev --dev
+composer require Amryami/assessments:@dev --dev
 ```
 
 This path workflow mirrors how GitHub Actions runs the package testbench and is handy before tagging a release for Packagist.
@@ -70,7 +70,7 @@ This path workflow mirrors how GitHub Actions runs the package testbench and is 
 ## Configuration Highlights
 
 - `assessments.enabled` / `assessments.admin_only` toggle the module surface.
-- `assessments.models.category` / `assessments.models.user` (or env `ASSESSMENTS_MODEL_CATEGORY/USER`) must be set to the host app's Eloquent classes if the defaults cannot be auto-discovered by `Yami\Assessments\Support\ModelResolver`.
+- `assessments.models.category` / `assessments.models.user` (or env `ASSESSMENTS_MODEL_CATEGORY/USER`) must be set to the host app's Eloquent classes if the defaults cannot be auto-discovered by `Amryami\Assessments\Support\ModelResolver`.
 - `assessments.middleware.*` controls the guard/middleware stack for admin / candidate web + API surfaces.
 - `assessments.routes.*` adjusts path + name prefixes for dashboard and candidate endpoints so they can live under an existing `/dashboard` or `/api` namespace.
 - `assessments.assembly.grace_seconds`, `assessments.exposure_*`, and `assessments.propagation_strict` tune the attempt lifecycle, exposure enforcement, and propagation safety checks.
@@ -80,9 +80,9 @@ See `config/assessments.php` (or the published copy) for full defaults and inlin
 ## Development Notes
 
 - Host application classes under `app/Assessments` are thin wrappers that extend package controllers, services, and commands to preserve backwards compatibility while the module is extracted.
-- Package controllers now consume custom FormRequest classes (`Yami\\Assessments\\Support\\FormRequest`) which proxy through to any host base request when present (topics, exams, presets, answer sets UI/API, propagation, reviews, questions, candidate attempts), and API responses lean on dedicated resources (answer sets, attempt start, exam preview).
+- Package controllers now consume custom FormRequest classes (`Amryami\\Assessments\\Support\\FormRequest`) which proxy through to any host base request when present (topics, exams, presets, answer sets UI/API, propagation, reviews, questions, candidate attempts), and API responses lean on dedicated resources (answer sets, attempt start, exam preview).
 - Blade templates for admin + candidate UIs now live under `assessments::admin/*` and `assessments::assessments/candidate/*`; host views are pass-through includes for existing references.
-- Temporary class aliases are defined in `src/helpers.php`; remove them once consumers switch fully to the `Yami\Assessments\` namespace.
+- Temporary class aliases are defined in `src/helpers.php`; remove them once consumers switch fully to the `Amryami\Assessments\` namespace.
 - Package migrations and seeders live in `database/{migrations,seeders}` under the package root. They are automatically loaded when running Artisan commands.
 - Progress and sprint planning live in `co-pilot_assistance/assesment_package/*.md`.
 

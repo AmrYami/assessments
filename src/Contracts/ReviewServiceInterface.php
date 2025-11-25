@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Contracts;
+namespace Amryami\Assessments\Contracts;
 
-use Yami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Attempt;
 
 interface ReviewServiceInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Yami\Assessments\Domain\Models\Exam;
-use Yami\Assessments\Services\ExamReportService;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Services\ExamReportService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

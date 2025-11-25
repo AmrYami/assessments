@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Yami\Assessments\Domain\Models\Question;
-use Yami\Assessments\Support\FormRequest;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Support\FormRequest;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;

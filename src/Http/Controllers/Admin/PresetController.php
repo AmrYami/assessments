@@ -1,10 +1,10 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\InputPreset;
-use Yami\Assessments\Http\Requests\Admin\{StorePresetRequest, UpdatePresetRequest};
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\InputPreset;
+use Amryami\Assessments\Http\Requests\Admin\{StorePresetRequest, UpdatePresetRequest};
 use Illuminate\Http\Request;
 
 class PresetController extends Controller

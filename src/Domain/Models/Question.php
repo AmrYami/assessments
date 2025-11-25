@@ -1,10 +1,10 @@
 <?php
 
-namespace Yami\Assessments\Domain\Models;
+namespace Amryami\Assessments\Domain\Models;
 
-use Yami\Assessments\Services\QuestionPoolCache;
-use Yami\Assessments\Support\BaseModel;
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Services\QuestionPoolCache;
+use Amryami\Assessments\Support\BaseModel;
+use Amryami\Assessments\Support\ModelResolver;
 
 class Question extends BaseModel
 {

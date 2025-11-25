@@ -1,12 +1,12 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Candidate;
+namespace Amryami\Assessments\Http\Controllers\Candidate;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\{Exam, Question, Attempt, ExamRequirement};
-use Yami\Assessments\Http\Resources\ExamPreviewResource;
-use Yami\Assessments\Services\ExamAssemblyService;
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{Exam, Question, Attempt, ExamRequirement};
+use Amryami\Assessments\Http\Resources\ExamPreviewResource;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 
 class ExamController extends Controller
@@ -117,7 +117,7 @@ class ExamController extends Controller
         abort_unless(optional(auth()->user())->can('exams.attempts.view_result'), 403);
         $user = auth()->user();
         $page = 'My Results';
-        $attempts = \Yami\Assessments\Domain\Models\Attempt::where('user_id',$user->id)
+        $attempts = \Amryami\Assessments\Domain\Models\Attempt::where('user_id',$user->id)
             ->where('status','submitted')
             ->orderByDesc('id')->paginate(20);
         $exams = Exam::whereIn('id', $attempts->pluck('exam_id'))->get()->keyBy('id');

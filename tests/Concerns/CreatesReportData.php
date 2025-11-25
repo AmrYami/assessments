@@ -1,11 +1,11 @@
 <?php
 
-namespace Yami\Assessments\Tests\Concerns;
+namespace Amryami\Assessments\Tests\Concerns;
 
-use Yami\Assessments\Domain\Models\Attempt;
-use Yami\Assessments\Domain\Models\Exam;
-use Yami\Assessments\Domain\Models\Question;
-use Yami\Assessments\Tests\Fixtures\User;
+use Amryami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Tests\Fixtures\User;
 
 trait CreatesReportData
 {

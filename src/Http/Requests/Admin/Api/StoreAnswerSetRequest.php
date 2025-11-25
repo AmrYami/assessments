@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Http\Requests\Admin\Api;
+namespace Amryami\Assessments\Http\Requests\Admin\Api;
 
-use Yami\Assessments\Support\FormRequest;
+use Amryami\Assessments\Support\FormRequest;
 use Illuminate\Validation\Rule;
 
 class StoreAnswerSetRequest extends FormRequest

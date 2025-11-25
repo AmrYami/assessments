@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
-use Yami\Assessments\Domain\Models\Attempt;
-use Yami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Exam;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;

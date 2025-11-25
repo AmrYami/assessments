@@ -1,12 +1,12 @@
 <?php
 
-namespace Yami\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Yami\Assessments\Domain\Models\Exam;
-use Yami\Assessments\Domain\Models\Question;
-use Yami\Assessments\Services\ExamAssemblyService;
-use Yami\Assessments\Services\QuestionPoolCache;
-use Yami\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Services\QuestionPoolCache;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Cache;
 
 class ExamAssemblyCacheTest extends TestCase

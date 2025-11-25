@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Yami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Domain\Models\Attempt;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 

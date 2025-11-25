@@ -1,6 +1,6 @@
 <?php
 
-namespace Yami\Assessments\Http\Resources;
+namespace Amryami\Assessments\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

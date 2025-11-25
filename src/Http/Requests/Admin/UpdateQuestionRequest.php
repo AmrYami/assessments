@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Yami\Assessments\Domain\Models\Question;
+use Amryami\Assessments\Domain\Models\Question;
 use Illuminate\Validation\Rule;
 
 class UpdateQuestionRequest extends StoreQuestionRequest

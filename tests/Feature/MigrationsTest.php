@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Yami\Assessments\Domain\Models\Topic;
-use Yami\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Topic;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 

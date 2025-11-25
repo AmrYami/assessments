@@ -1,11 +1,11 @@
 <?php
 
-namespace Yami\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Yami\Assessments\Contracts\ReviewServiceInterface;
-use Yami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
-use Yami\Assessments\Tests\Fixtures\User;
-use Yami\Assessments\Tests\TestCase;
+use Amryami\Assessments\Contracts\ReviewServiceInterface;
+use Amryami\Assessments\Domain\Models\{Attempt, Exam, ExamRequirement, Question};
+use Amryami\Assessments\Tests\Fixtures\User;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
 
 class ReviewServiceTest extends TestCase

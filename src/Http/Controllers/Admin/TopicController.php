@@ -1,10 +1,10 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\Topic;
-use Yami\Assessments\Http\Requests\Admin\{StoreTopicRequest, UpdateTopicRequest};
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\Topic;
+use Amryami\Assessments\Http\Requests\Admin\{StoreTopicRequest, UpdateTopicRequest};
 
 class TopicController extends Controller
 {

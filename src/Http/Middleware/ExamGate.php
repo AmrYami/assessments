@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Http\Middleware;
+namespace Amryami\Assessments\Http\Middleware;
 
-use Yami\Assessments\Domain\Models\{ExamRequirement, Exam};
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Domain\Models\{ExamRequirement, Exam};
+use Amryami\Assessments\Support\ModelResolver;
 use Closure;
 use Illuminate\Http\Request;
 

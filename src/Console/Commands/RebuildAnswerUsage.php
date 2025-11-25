@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Yami\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
-use Yami\Assessments\Services\AnswerUsageService;
+use Amryami\Assessments\Domain\Models\{Answer, AnswerUsageAggregate};
+use Amryami\Assessments\Services\AnswerUsageService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 

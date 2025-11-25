@@ -1,10 +1,10 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\Exam;
-use Yami\Assessments\Services\ExamReportService;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Services\ExamReportService;
 
 class ReportController extends Controller
 {

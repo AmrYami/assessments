@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
 use Illuminate\Support\Facades\DB;
-use Yami\Assessments\Domain\Models\AnswerUsageAggregate;
+use Amryami\Assessments\Domain\Models\AnswerUsageAggregate;
 
 class AnswerUsageService
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Console\Commands;
+namespace Amryami\Assessments\Console\Commands;
 
-use Yami\Assessments\Domain\Models\{AnswerKey, Attempt, AttemptTextAnswer, Exam, Question};
+use Amryami\Assessments\Domain\Models\{AnswerKey, Attempt, AttemptTextAnswer, Exam, Question};
 use Illuminate\Console\Command;
 
 class FinalizeExpiredAttempts extends Command

@@ -1,6 +1,6 @@
 <?php
 
-use Yami\Assessments\Http\Controllers\Admin\{
+use Amryami\Assessments\Http\Controllers\Admin\{
     AnswerSetApiController,
     ExamController,
     PresetController,

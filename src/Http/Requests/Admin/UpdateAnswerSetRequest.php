@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Yami\Assessments\Domain\Models\AnswerSet;
+use Amryami\Assessments\Domain\Models\AnswerSet;
 use Illuminate\Validation\Rule;
 
 class UpdateAnswerSetRequest extends StoreAnswerSetRequest

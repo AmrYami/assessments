@@ -1,6 +1,6 @@
 <?php
 
-namespace Yami\Assessments\Services;
+namespace Amryami\Assessments\Services;
 
 use Illuminate\Contracts\Cache\Repository as CacheRepository;
 

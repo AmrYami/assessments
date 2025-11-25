@@ -1,13 +1,13 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\{Question, Exam, Topic};
-use Yami\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
-use Yami\Assessments\Services\PropagationService;
-use Yami\Assessments\Services\ExamAssemblyService;
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{Question, Exam, Topic};
+use Amryami\Assessments\Http\Requests\Admin\{PreviewPropagationRequest, PropagateRequest};
+use Amryami\Assessments\Services\PropagationService;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Support\ModelResolver;
 use Illuminate\Http\Request;
 
 class PropagationApiController extends Controller

@@ -1,10 +1,10 @@
 <?php
 
-namespace Yami\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Yami\Assessments\Domain\Models\Attempt;
-use Yami\Assessments\Tests\Fixtures\User;
-use Yami\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Attempt;
+use Amryami\Assessments\Tests\Fixtures\User;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;

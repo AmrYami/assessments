@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Candidate;
+namespace Amryami\Assessments\Http\Controllers\Candidate;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\{
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{
     AnswerKey,
     Attempt,
     AttemptTextAnswer,
@@ -12,16 +12,16 @@ use Yami\Assessments\Domain\Models\{
     QuestionResponsePart,
     ExamRequirement
 };
-use Yami\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
-use Yami\Assessments\Http\Resources\{
+use Amryami\Assessments\Http\Requests\Candidate\{SaveAnswersRequest, StartAttemptRequest};
+use Amryami\Assessments\Http\Resources\{
     AttemptHeartbeatResource,
     AttemptResultResource,
     AttemptStartResource,
     AttemptSubmitResource
 };
-use Yami\Assessments\Services\AnswerUsageService;
-use Yami\Assessments\Services\ExamAssemblyService;
-use Yami\Assessments\Support\ModelResolver;
+use Amryami\Assessments\Services\AnswerUsageService;
+use Amryami\Assessments\Services\ExamAssemblyService;
+use Amryami\Assessments\Support\ModelResolver;
 use Carbon\CarbonImmutable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
@@ -429,7 +429,7 @@ class AttemptApiController extends Controller
             ],
         ]);
 
-        $req = \Yami\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
+        $req = \Amryami\Assessments\Domain\Models\ExamRequirement::where('user_id', $attempt->user_id)
             ->where('exam_id', $attempt->exam_id)
             ->first();
         if ($req) {

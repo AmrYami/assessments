@@ -1,10 +1,10 @@
 <?php
 
-namespace Yami\Assessments\Tests\Feature;
+namespace Amryami\Assessments\Tests\Feature;
 
-use Yami\Assessments\Domain\Models\Exam;
-use Yami\Assessments\Tests\Concerns\CreatesReportData;
-use Yami\Assessments\Tests\TestCase;
+use Amryami\Assessments\Domain\Models\Exam;
+use Amryami\Assessments\Tests\Concerns\CreatesReportData;
+use Amryami\Assessments\Tests\TestCase;
 use Illuminate\Support\Facades\View;
 
 class AdminReportsApiTest extends TestCase

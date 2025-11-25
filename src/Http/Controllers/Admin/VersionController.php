@@ -1,9 +1,9 @@
 <?php
 
-namespace Yami\Assessments\Http\Controllers\Admin;
+namespace Amryami\Assessments\Http\Controllers\Admin;
 
-use Yami\Assessments\Support\Controller;
-use Yami\Assessments\Domain\Models\{Question, Exam};
+use Amryami\Assessments\Support\Controller;
+use Amryami\Assessments\Domain\Models\{Question, Exam};
 use Illuminate\Http\Request;
 
 class VersionController extends Controller

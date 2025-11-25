@@ -1,8 +1,8 @@
 <?php
 
-namespace Yami\Assessments\Http\Requests\Admin;
+namespace Amryami\Assessments\Http\Requests\Admin;
 
-use Yami\Assessments\Support\FormRequest;
+use Amryami\Assessments\Support\FormRequest;
 
 class PropagateRequest extends FormRequest
 {
