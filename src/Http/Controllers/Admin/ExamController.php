@@ -59,7 +59,7 @@ class ExamController extends Controller
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'Assessments — Exams';
         $items = Exam::orderByDesc('id')->paginate(20);
-        return view('admin.assessments.exams.index', compact('page','items'));
+        return view('assessments::admin.assessments.exams.index', compact('page','items'));
     }
 
     public function create()
@@ -70,7 +70,7 @@ class ExamController extends Controller
         $questions = Question::where('is_active',true)->orderByDesc('id')->limit(50)->get();
         $categoryModel = ModelResolver::category();
         $categories = $categoryModel::orderBy('name')->get();
-        return view('admin.assessments.exams.create', compact('page','topics','questions','categories'));
+        return view('assessments::admin.assessments.exams.create', compact('page','topics','questions','categories'));
     }
 
     public function store(StoreExamRequest $request)
@@ -123,7 +123,7 @@ class ExamController extends Controller
         $categoryModel = ModelResolver::category();
         $categories = $categoryModel::orderBy('name')->get();
         $exam->load(['topics','questions']);
-        return view('admin.assessments.exams.edit', compact('page','exam','topics','questions','categories'));
+        return view('assessments::admin.assessments.exams.edit', compact('page','exam','topics','questions','categories'));
     }
 
     public function update(UpdateExamRequest $request, Exam $exam)
@@ -242,7 +242,7 @@ class ExamController extends Controller
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'Assessments — Preview Exam';
         $exam->load('questions.options');
-        return view('admin.assessments.exams.preview', compact('page','exam'));
+        return view('assessments::admin.assessments.exams.preview', compact('page','exam'));
     }
 
     public function coverage(Exam $exam)

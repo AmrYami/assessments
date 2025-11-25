@@ -1,7 +1,7 @@
 @extends('dashboard.mt.main', ['page' => $page])
 
 @section('content')
-    @include('admin.assessments.partials.alerts')
+    @include('assessments::admin.assessments.partials.alerts')
     <form method="post" action="{{ route('dashboard.assessments.topics.store') }}" class="card">
         @csrf
         <div class="card-body">

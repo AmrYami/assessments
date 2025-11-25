@@ -1,7 +1,7 @@
 @extends('dashboard.mt.main', ['page' => $page])
 
 @section('content')
-    @include('admin.assessments.partials.alerts')
+    @include('assessments::admin.assessments.partials.alerts')
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h3 class="mb-0">Exams</h3>
         <a href="{{ route('dashboard.assessments.exams.create') }}" class="btn btn-primary">New Exam</a>

@@ -142,7 +142,7 @@ class AssessmentsDemoSeeder extends Seeder
                 ['exam_id' => $examId, 'question_id' => $q2, 'position' => 2, 'created_at' => now(), 'updated_at' => now()],
             ]);
 
-            // Exam (by_count)
+            // Exam  (by_count)
             DB::table('assessment_exams')->insert([
                 'title' => 'Quick Check',
                 'slug' => 'quick-check',

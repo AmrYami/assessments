@@ -36,14 +36,14 @@ class AnswerSetController extends Controller
 
         $items = $query->orderByDesc('id')->paginate(20)->appends($request->query());
 
-        return view('admin.assessments.answer_sets.index', compact('page', 'items'));
+        return view('assessments::admin.assessments.answer_sets.index', compact('page', 'items'));
     }
 
     public function create()
     {
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'New Answer Set';
-        return view('admin.assessments.answer_sets.create', compact('page'));
+        return view('assessments::admin.assessments.answer_sets.create', compact('page'));
     }
 
     public function store(StoreAnswerSetRequest $request)
@@ -68,7 +68,7 @@ class AnswerSetController extends Controller
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'Edit Answer Set';
         $answerSet->load(['items' => fn($q) => $q->withTrashed()->orderBy('position')]);
-        return view('admin.assessments.answer_sets.edit', compact('page', 'answerSet'));
+        return view('assessments::admin.assessments.answer_sets.edit', compact('page', 'answerSet'));
     }
 
     public function update(UpdateAnswerSetRequest $request, AnswerSet $answerSet)

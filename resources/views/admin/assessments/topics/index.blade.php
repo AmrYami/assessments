@@ -1,7 +1,7 @@
 @extends('dashboard.mt.main', ['page' => $page])
 
 @section('content')
-    @include('admin.assessments.partials.alerts')
+    @include('assessments::admin.assessments.partials.alerts')
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
             <h3 class="card-title">Topics</h3>

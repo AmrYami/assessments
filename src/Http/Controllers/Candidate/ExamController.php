@@ -58,7 +58,7 @@ class ExamController extends Controller
             $failCategory = $categoryModel::find($user->category_id);
         }
 
-        return view('assessments.candidate.exams.index', compact('page','items','requirement','entranceExam','failCategory'));
+        return view('assessments::assessments.candidate.exams.index', compact('page','items','requirement','entranceExam','failCategory'));
     }
 
     public function preview(Exam $exam, Request $request)
@@ -108,7 +108,7 @@ class ExamController extends Controller
                 'responseParts' => fn($q) => $q->orderBy('position'),
             ])
             ->get();
-        return view('assessments.candidate.exams.preview', compact('page','exam','questions','seed'));
+        return view('assessments::assessments.candidate.exams.preview', compact('page','exam','questions','seed'));
     }
 
     public function results()
@@ -133,6 +133,6 @@ class ExamController extends Controller
         $questions = !empty($questionIds)
             ? Question::whereIn('id', $questionIds)->get(['id','text'])->keyBy('id')
             : collect();
-        return view('assessments.candidate.exams.results', compact('page','attempts','exams','questions'));
+        return view('assessments::assessments.candidate.exams.results', compact('page','attempts','exams','questions'));
     }
 }

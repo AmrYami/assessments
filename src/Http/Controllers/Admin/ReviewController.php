@@ -22,7 +22,7 @@ class ReviewController extends Controller
         $page = 'Assessments — Reviews';
         $items = Attempt::whereIn('review_status', ['pending','in_review'])->orderByDesc('id')->paginate(20);
         $exams = Exam::whereIn('id', $items->pluck('exam_id'))->get()->keyBy('id');
-        return view('admin.assessments.reviews.index', compact('page','items','exams'));
+        return view('assessments::admin.assessments.reviews.index', compact('page','items','exams'));
     }
 
     public function show(Attempt $attempt)
@@ -54,7 +54,7 @@ class ReviewController extends Controller
             return [$question->id => $this->resolveResponseParts($question)];
         });
 
-        return view('admin.assessments.reviews.show', compact('page', 'attempt', 'questions', 'answers', 'textAnswers', 'partsMap'));
+        return view('assessments::admin.assessments.reviews.show', compact('page', 'attempt', 'questions', 'answers', 'textAnswers', 'partsMap'));
     }
 
     public function update(Attempt $attempt, UpdateReviewRequest $request)

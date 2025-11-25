@@ -41,7 +41,7 @@ class QuestionController extends Controller
 
         $items = $query->paginate(20)->appends($request->query());
         $topics = Topic::orderBy('name')->get();
-        return view('admin.assessments.questions.index', compact('page', 'items', 'topics'));
+        return view('assessments::admin.assessments.questions.index', compact('page', 'items', 'topics'));
     }
 
     public function create()
@@ -50,7 +50,7 @@ class QuestionController extends Controller
         $page = 'Assessments — New Question';
         $topics = Topic::orderBy('name')->get();
         $answerSets = AnswerSet::orderBy('name')->get();
-        return view('admin.assessments.questions.create', compact('page', 'topics', 'answerSets'));
+        return view('assessments::admin.assessments.questions.create', compact('page', 'topics', 'answerSets'));
     }
 
     public function store(StoreQuestionRequest $request)
@@ -101,7 +101,7 @@ class QuestionController extends Controller
         ]);
         $currentAnswerSetId = optional($question->answerLinks->first())->item->answer_set_id;
 
-        return view('admin.assessments.questions.edit', compact('page', 'question', 'topics', 'currentAnswerSetId'));
+        return view('assessments::admin.assessments.questions.edit', compact('page', 'question', 'topics', 'currentAnswerSetId'));
     }
 
     public function update(UpdateQuestionRequest $request, Question $question)

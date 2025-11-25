@@ -26,14 +26,14 @@ class PresetController extends Controller
         }
         $page = 'Input Presets';
         $items = $q->orderByDesc('id')->paginate(20)->appends($request->query());
-        return view('admin.assessments.presets.index', compact('page','items'));
+        return view('assessments::admin.assessments.presets.index', compact('page','items'));
     }
 
     public function create()
     {
         abort_unless(config('assessments.enabled') && config('assessments.admin_only') && config('assessments.preset_library'), 404);
         $page = 'New Input Preset';
-        return view('admin.assessments.presets.create', compact('page'));
+        return view('assessments::admin.assessments.presets.create', compact('page'));
     }
 
     public function store(StorePresetRequest $request)
@@ -47,7 +47,7 @@ class PresetController extends Controller
     {
         abort_unless(config('assessments.enabled') && config('assessments.admin_only') && config('assessments.preset_library'), 404);
         $page = 'Edit Input Preset';
-        return view('admin.assessments.presets.edit', compact('page','preset'));
+        return view('assessments::admin.assessments.presets.edit', compact('page','preset'));
     }
 
     public function update(UpdatePresetRequest $request, InputPreset $preset)

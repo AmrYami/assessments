@@ -26,7 +26,7 @@ class VersionController extends Controller
             ->selectRaw('question_id, count(*) as cnt, sum(case when effective_at > now() then 1 else 0 end) as scheduled')
             ->groupBy('question_id')
             ->get()->keyBy('question_id');
-        return view('admin.assessments.history.question', compact('page','versions','placements','rootId'));
+        return view('assessments::admin.assessments.history.question', compact('page','versions','placements','rootId'));
     }
 
     public function examHistory(Exam $exam)
@@ -46,7 +46,7 @@ class VersionController extends Controller
             ->selectRaw('exam_id, count(*) as cnt, sum(case when effective_at > now() then 1 else 0 end) as scheduled')
             ->groupBy('exam_id')
             ->get()->keyBy('exam_id');
-        return view('admin.assessments.history.exam', compact('page','versions','placements','rootId'));
+        return view('assessments::admin.assessments.history.exam', compact('page','versions','placements','rootId'));
     }
 
     public function questionDiff(Request $request)
@@ -59,7 +59,7 @@ class VersionController extends Controller
         $right = Question::findOrFail($rightId);
         $page = 'Question Diff';
         $diff = $this->diffQuestion($left, $right);
-        return view('admin.assessments.history.question_diff', compact('page','left','right','diff'));
+        return view('assessments::admin.assessments.history.question_diff', compact('page','left','right','diff'));
     }
 
     public function examDiff(Request $request)
@@ -72,7 +72,7 @@ class VersionController extends Controller
         $right = Exam::findOrFail($rightId);
         $page = 'Exam Diff';
         $diff = $this->diffExam($left, $right);
-        return view('admin.assessments.history.exam_diff', compact('page','left','right','diff'));
+        return view('assessments::admin.assessments.history.exam_diff', compact('page','left','right','diff'));
     }
 
     protected function diffQuestion(Question $a, Question $b): array

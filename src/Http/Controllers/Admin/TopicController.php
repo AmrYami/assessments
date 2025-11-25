@@ -13,14 +13,14 @@ class TopicController extends Controller
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'Assessments — Topics';
         $items = Topic::orderBy('position')->paginate(20);
-        return view('admin.assessments.topics.index', compact('page', 'items'));
+        return view('assessments::admin.assessments.topics.index', compact('page', 'items'));
     }
 
     public function create()
     {
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'Assessments — New Topic';
-        return view('admin.assessments.topics.create', compact('page'));
+        return view('assessments::admin.assessments.topics.create', compact('page'));
     }
 
     public function store(StoreTopicRequest $request)
@@ -36,7 +36,7 @@ class TopicController extends Controller
     {
         abort_unless(config('assessments.enabled') && config('assessments.admin_only'), 404);
         $page = 'Assessments — Edit Topic';
-        return view('admin.assessments.topics.edit', compact('page','topic'));
+        return view('assessments::admin.assessments.topics.edit', compact('page','topic'));
     }
 
     public function update(UpdateTopicRequest $request, Topic $topic)
