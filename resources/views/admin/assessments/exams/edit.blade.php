@@ -110,6 +110,53 @@
                 </div>
             </div>
 
+            <div class="card mb-3">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <strong>Activation Link</strong>
+                    <small class="text-muted">One-time activation for candidates</small>
+                </div>
+                <div class="card-body">
+                    @php
+                        $activationPrefix = trim(config('assessments.activation.prefix', 'assessments/activate'), '/');
+                        $basePath = $activationPrefix ? $activationPrefix . '/' : '';
+                        $path = ltrim(old('activation_path', $exam->activation_path ?? ($basePath . ($exam->slug ?? ''))), '/');
+                        $token = $exam->activation_token ?? '';
+                        $activationUrl = $token ? url('/' . $path . '/' . $token) : '';
+                    @endphp
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Activation Path</label>
+                            <div class="input-group">
+                                <span class="input-group-text">/</span>
+                                <input name="activation_path" class="form-control" value="{{ $path }}">
+                            </div>
+                            <div class="form-text">Defaults to prefix + slug; you can adjust if needed.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Activation Expires At (optional)</label>
+                            <input type="datetime-local" name="activation_expires_at" class="form-control" value="{{ old('activation_expires_at', optional($exam->activation_expires_at)->format('Y-m-d\\TH:i')) }}">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label">Token</label>
+                            <input type="text" class="form-control" name="activation_token" value="{{ old('activation_token', $token) }}">
+                            <div class="form-text">Leave blank to regenerate.</div>
+                        </div>
+                    </div>
+                    @if($activationUrl)
+                        <div class="mt-2">
+                            <label class="form-label">Activation URL</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" readonly value="{{ $activationUrl }}" id="activation_url">
+                                <button class="btn btn-outline-secondary" type="button" onclick="navigator.clipboard?.writeText(document.getElementById('activation_url').value)">Copy</button>
+                            </div>
+                        </div>
+                        @if($exam->activation_used_at)
+                            <div class="text-muted small mt-1">Used at {{ $exam->activation_used_at }}.</div>
+                        @endif
+                    @endif
+                </div>
+            </div>
+
             <div class="row mb-3">
                 <div class="col-md-3">
                     <label class="form-label">Pass Type</label>

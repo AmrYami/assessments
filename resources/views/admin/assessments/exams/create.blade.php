@@ -38,6 +38,33 @@
                 </div>
             </div>
 
+            <div class="card mb-3">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <strong>Activation Link (optional)</strong>
+                    <small class="text-muted">One-time activation for candidates</small>
+                </div>
+                <div class="card-body">
+                    @php
+                        $activationPrefix = trim(config('assessments.activation.prefix', 'assessments/activate'), '/');
+                        $defaultPath = $activationPrefix ? $activationPrefix . '/' : '';
+                    @endphp
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Activation Path</label>
+                            <div class="input-group">
+                                <span class="input-group-text">/{{ $defaultPath }}</span>
+                                <input name="activation_path" class="form-control" placeholder="your-slug" value="{{ old('activation_path') }}">
+                            </div>
+                            <div class="form-text">Defaults to prefix + slug; you can leave blank to auto-fill.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Activation Expires At (optional)</label>
+                            <input type="datetime-local" name="activation_expires_at" class="form-control" value="{{ old('activation_expires_at') }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Difficulty Split (visible when Mode = by_score or by_count) -->
             <div class="card mb-3" id="split_card" style="display:none">
                 <div class="card-header"><strong>Difficulty Split</strong> <span class="text-muted" id="split_label_hint">(Score)</span></div>

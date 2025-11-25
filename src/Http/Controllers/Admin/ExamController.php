@@ -8,6 +8,7 @@ use Amryami\Assessments\Http\Requests\Admin\{StoreExamRequest, UpdateExamRequest
 use Amryami\Assessments\Services\ExamAssemblyService;
 use Amryami\Assessments\Services\SchemaHashService;
 use Amryami\Assessments\Support\ModelResolver;
+use Illuminate\Support\Str;
 
 class ExamController extends Controller
 {
@@ -30,6 +31,28 @@ class ExamController extends Controller
         if ($mode === 'by_count') $snap['question_count'] = (int)($data['question_count'] ?? 0);
         if ($mode === 'by_score') $snap['target_total_score'] = (int)($data['target_total_score'] ?? 0);
         return $snap;
+    }
+
+    protected function buildActivationFields(array $data, ?Exam $existing): array
+    {
+        $tokenLength = (int) config('assessments.activation.token_length', 40);
+        $tokenLength = $tokenLength > 0 ? $tokenLength : 40;
+        $expiresMinutes = (int) config('assessments.activation.expires_minutes', 0);
+
+        $token = $data['activation_token'] ?? $existing?->activation_token ?? Str::random($tokenLength);
+        $expiresAt = $data['activation_expires_at']
+            ?? ($expiresMinutes > 0 ? now()->addMinutes($expiresMinutes) : null);
+        $path = $data['activation_path'] ?? $existing?->activation_path ?? null;
+        if (!$path && !empty($data['slug'])) {
+            $prefix = trim((string) config('assessments.activation.prefix', 'assessments/activate'), '/');
+            $path = $prefix !== '' ? "{$prefix}/{$data['slug']}" : $data['slug'];
+        }
+
+        return [
+            'activation_path' => $path,
+            'activation_token' => $token,
+            'activation_expires_at' => $expiresAt,
+        ];
     }
     public function index()
     {
@@ -54,6 +77,8 @@ class ExamController extends Controller
     {
         $data = $request->validated();
 
+        $activation = $this->buildActivationFields($data, null);
+
         $exam = Exam::create([
             'title' => $data['title'],
             'slug' => $data['slug'],
@@ -71,6 +96,9 @@ class ExamController extends Controller
             'pass_value' => $data['pass_value'] ?? 70,
             'max_attempts' => $data['max_attempts'] ?? 1,
             'difficulty_split_json' => $this->buildDifficultySplitSnapshot($data, null),
+            'activation_path' => $activation['activation_path'],
+            'activation_token' => $activation['activation_token'],
+            'activation_expires_at' => $activation['activation_expires_at'],
         ]);
 
         $exam->topics()->sync($data['topics'] ?? []);
@@ -102,6 +130,8 @@ class ExamController extends Controller
     {
         $data = $request->validated();
 
+        $activation = $this->buildActivationFields($data, $exam);
+
         $exam->update([
             'title' => $data['title'],
             'slug' => $data['slug'],
@@ -119,6 +149,9 @@ class ExamController extends Controller
             'pass_value' => $data['pass_value'] ?? $exam->pass_value,
             'max_attempts' => $data['max_attempts'] ?? $exam->max_attempts,
             'difficulty_split_json' => $this->buildDifficultySplitSnapshot($data, $exam),
+            'activation_path' => $activation['activation_path'],
+            'activation_token' => $activation['activation_token'],
+            'activation_expires_at' => $activation['activation_expires_at'],
         ]);
         $exam->topics()->sync($data['topics'] ?? []);
 

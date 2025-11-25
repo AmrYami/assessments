@@ -36,8 +36,9 @@ return new class extends Migration {
                 $t->unsignedBigInteger('question_id')->index();
                 $t->unsignedInteger('position')->default(0);
                 $t->timestamps();
-                $t->unique(['exam_id','question_id']);
-                $t->index(['exam_id','position']);
+                // Short index names to avoid MySQL prefix length issues when a DB prefix is used.
+                $t->unique(['exam_id','question_id'], 'aeq_exam_qid_unique');
+                $t->index(['exam_id','position'], 'aeq_exam_pos_idx');
             });
         }
 
@@ -47,7 +48,8 @@ return new class extends Migration {
                 $t->unsignedBigInteger('question_id')->index();
                 $t->unsignedBigInteger('category_id')->index();
                 $t->timestamps();
-                $t->unique(['question_id','category_id']);
+                // Short name to keep identifier length under 64 chars with prefixes
+                $t->unique(['question_id','category_id'], 'aqc_qid_cid_unique');
             });
         }
 
@@ -105,4 +107,3 @@ return new class extends Migration {
         Schema::dropIfExists('assessment_question_options');
     }
 };
-

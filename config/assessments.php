@@ -72,4 +72,21 @@ return [
     'reminder' => [
         'log_channel' => env('ASSESSMENTS_REMINDER_LOG_CHANNEL', 'daily'),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Exam Activation
+    |--------------------------------------------------------------------------
+    |
+    | Allow one-time activation of an exam via a signed-like token. The prefix
+    | controls the public URL, and redirect_route is used when no custom path
+    | is stored on the exam record.
+    */
+    'activation' => [
+        'prefix' => env('ASSESSMENTS_ACTIVATION_PREFIX', 'assessments/activate'),
+        'middleware' => ['web'],
+        'token_length' => env('ASSESSMENTS_ACTIVATION_TOKEN_LENGTH', 40),
+        'expires_minutes' => env('ASSESSMENTS_ACTIVATION_EXPIRES_MINUTES', 1440), // 24h
+        'redirect_route' => env('ASSESSMENTS_ACTIVATION_REDIRECT_ROUTE', 'assessments.candidate.exams.preview'),
+    ],
 ];

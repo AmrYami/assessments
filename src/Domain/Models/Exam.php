@@ -27,6 +27,10 @@ class Exam extends BaseModel
         'difficulty_split_json',
         'origin_id',
         'version',
+        'activation_path',
+        'activation_token',
+        'activation_expires_at',
+        'activation_used_at',
     ];
 
     protected $casts = [
@@ -43,6 +47,8 @@ class Exam extends BaseModel
         'difficulty_split_json' => 'array',
         'origin_id' => 'integer',
         'version' => 'integer',
+        'activation_expires_at' => 'datetime',
+        'activation_used_at' => 'datetime',
     ];
 
     protected $attributes = [

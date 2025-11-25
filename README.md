@@ -70,12 +70,19 @@ This path workflow mirrors how GitHub Actions runs the package testbench and is 
 ## Configuration Highlights
 
 - `assessments.enabled` / `assessments.admin_only` toggle the module surface.
+- `assessments.activation.*` controls the one-time exam activation link (public prefix, middleware stack, token length/expiry, and default redirect route).
 - `assessments.models.category` / `assessments.models.user` (or env `ASSESSMENTS_MODEL_CATEGORY/USER`) must be set to the host app's Eloquent classes if the defaults cannot be auto-discovered by `Amryami\Assessments\Support\ModelResolver`.
 - `assessments.middleware.*` controls the guard/middleware stack for admin / candidate web + API surfaces.
 - `assessments.routes.*` adjusts path + name prefixes for dashboard and candidate endpoints so they can live under an existing `/dashboard` or `/api` namespace.
 - `assessments.assembly.grace_seconds`, `assessments.exposure_*`, and `assessments.propagation_strict` tune the attempt lifecycle, exposure enforcement, and propagation safety checks.
 
 See `config/assessments.php` (or the published copy) for full defaults and inline docs.
+
+### Activation Links
+
+- Config keys: `assessments.activation.prefix`, `assessments.activation.middleware`, `assessments.activation.token_length`, `assessments.activation.expires_minutes`, `assessments.activation.redirect_route` (all have `ASSESSMENTS_ACTIVATION_*` env mirrors).
+- Admin UI (exam create/edit) shows activation path, expiry, token, and a copyable URL. Leave token blank to regenerate; leave path blank to auto-fill from prefix + slug.
+- Public route: `/assessments/activate/{exam}/{token}` (prefix overridable). It checks token, expiry, and one-time use, marks the exam published, and redirects to the configured route (default `assessments.candidate.exams.preview`).
 
 ## Development Notes
 

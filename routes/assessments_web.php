@@ -12,10 +12,29 @@ use Amryami\Assessments\Http\Controllers\Admin\{
 };
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\Route;
+use Amryami\Assessments\Http\Controllers\ActivationController;
+
+$activationMiddleware = config('assessments.activation.middleware', ['web']);
+$activationMiddleware = is_array($activationMiddleware) ? array_filter($activationMiddleware) : [$activationMiddleware];
 
 if (!config('assessments.enabled', true) || !config('assessments.admin_only', true)) {
+    // Still register activation route for public use
+    Route::prefix(config('assessments.activation.prefix', 'assessments/activate'))
+        ->name('assessments.activation.')
+        ->middleware($activationMiddleware)
+        ->group(function () {
+            Route::get('/{exam}/{token}', ActivationController::class)->name('show');
+        });
     return;
 }
+
+// Activation route
+Route::prefix(config('assessments.activation.prefix', 'assessments/activate'))
+    ->name('assessments.activation.')
+    ->middleware($activationMiddleware)
+    ->group(function () {
+        Route::get('/{exam}/{token}', ActivationController::class)->name('show');
+    });
 
 $adminMiddleware = config('assessments.middleware.admin');
 if (!is_array($adminMiddleware)) {

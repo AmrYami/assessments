@@ -40,6 +40,9 @@ class StoreExamRequest extends FormRequest
             'max_attempts' => 'nullable|integer|min:1',
             'difficulty_split' => 'array',
             'difficulty_split.*' => 'nullable|integer|min:0',
+            'activation_path' => 'nullable|string|max:255',
+            'activation_token' => 'nullable|string|max:64',
+            'activation_expires_at' => 'nullable|date',
         ];
     }
 

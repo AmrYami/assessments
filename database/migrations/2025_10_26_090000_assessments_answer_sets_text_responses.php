@@ -68,8 +68,9 @@ return new class extends Migration {
                 $table->unsignedInteger('position')->default(0);
                 $table->softDeletes();
                 $table->timestamps();
-                $table->unique(['question_id', 'key']);
-                $table->index(['question_id', 'position']);
+                // Short index names to stay under MySQL identifier limits with prefixes
+                $table->unique(['question_id', 'key'], 'aqrp_qid_key_unique');
+                $table->index(['question_id', 'position'], 'aqrp_qid_pos_idx');
             });
         }
 
